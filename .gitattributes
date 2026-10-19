@@ -1,0 +1,4 @@
+# Arquivos vão para a TV (Linux): manter LF também no checkout do Windows.
+* text=auto eol=lf
+*.png binary
+*.ipk binary

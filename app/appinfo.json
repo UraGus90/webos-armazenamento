@@ -1,0 +1,12 @@
+{
+  "id": "org.local.armazenamento",
+  "version": "0.1.0",
+  "vendor": "Pessoal",
+  "type": "web",
+  "main": "index.html",
+  "title": "Armazenamento",
+  "icon": "icon.png",
+  "largeIcon": "largeIcon.png",
+  "bgColor": "#0f1317",
+  "resolution": "1920x1080"
+}

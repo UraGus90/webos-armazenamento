@@ -1,0 +1,8 @@
+{
+  "name": "org.local.armazenamento.service",
+  "version": "0.1.0",
+  "description": "Serviço somente leitura que mede o armazenamento da TV",
+  "main": "service.js",
+  "private": true,
+  "license": "MIT"
+}

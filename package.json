@@ -1,0 +1,16 @@
+{
+  "name": "webos-armazenamento",
+  "version": "0.1.0",
+  "private": true,
+  "description": "App para webOS TV que mostra o uso do armazenamento interno (somente leitura).",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.17"
+  },
+  "scripts": {
+    "test": "node --test",
+    "icons": "node tools/make-icons.js",
+    "prototype": "node tools/build-prototype.js",
+    "build": "node --test && node tools/build-ipk.js"
+  }
+}

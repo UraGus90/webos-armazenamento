@@ -1,0 +1,9 @@
+{
+  "id": "org.local.armazenamento.service",
+  "description": "Serviço somente leitura que mede o armazenamento da TV",
+  "services": [
+    {
+      "name": "org.local.armazenamento.service"
+    }
+  ]
+}
