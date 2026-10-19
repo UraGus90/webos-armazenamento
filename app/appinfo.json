@@ -1,6 +1,6 @@
 {
   "id": "org.local.armazenamento",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "vendor": "Pessoal",
   "type": "web",
   "main": "index.html",

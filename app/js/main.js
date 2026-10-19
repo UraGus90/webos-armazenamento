@@ -22,10 +22,15 @@
     return Array.prototype.slice.call(view.querySelectorAll('[data-focus]'));
   }
 
+  // No primeiro item, rola até o topo (revela os cards não focáveis acima dele);
+  // no último, até o fim (passa do rodapé fixo); no meio, o mínimo para aparecer.
   function focusItem(node) {
     if (!node) return;
     node.focus();
-    if (node.scrollIntoView) node.scrollIntoView({ block: 'nearest' });
+    var items = focusables();
+    if (node === items[0]) window.scrollTo(0, 0);
+    else if (node === items[items.length - 1]) window.scrollTo(0, document.body.scrollHeight);
+    else if (node.scrollIntoView) node.scrollIntoView({ block: 'nearest' });
   }
 
   function restoreFocus() {
@@ -154,6 +159,13 @@
   });
 
   window.addEventListener('popstate', render);
+
+  // webOS resume o app sem recarregar a página: ao voltar para o primeiro plano,
+  // relê os dados para não mostrar números velhos.
+  document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState === 'visible') render();
+  });
+  document.addEventListener('webOSRelaunch', render);
 
   history.replaceState({ path: null }, '');
   render();

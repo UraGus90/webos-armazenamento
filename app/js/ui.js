@@ -146,7 +146,7 @@
       });
       view.appendChild(othersSection);
     }
-    if (model.hasKodi) view.appendChild(maintenance(handlers));
+    view.appendChild(maintenance(handlers));
     if (model.partial) partialNotice(view);
   }
 
@@ -163,8 +163,17 @@
     clear(view);
     var head = el('section', 'folder-head');
     head.appendChild(el('h2', null, 'Limpar cache do Kodi'));
-    head.appendChild(el('p', 'hero-sub', 'Será liberado cerca de ' + M.formatSize(model.totalK) + '.'));
+    head.appendChild(el('p', 'hero-sub', model.any
+      ? 'Será liberado cerca de ' + M.formatSize(model.totalK) + '.'
+      : 'Nada do Kodi para limpar no momento.'));
     view.appendChild(head);
+
+    if (!model.any) {
+      var only = el('section', 'actions');
+      only.appendChild(actionButton('Voltar', 'cancel', 'btn-plain', handlers.cancel));
+      view.appendChild(only);
+      return;
+    }
 
     var list = el('section', 'section');
     model.targets.forEach(function (t) {

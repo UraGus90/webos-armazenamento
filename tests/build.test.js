@@ -9,6 +9,7 @@ const zlib = require('zlib');
 const { buildIpk } = require('../tools/build-ipk');
 
 const ID = 'org.local.armazenamento';
+const VERSION = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'app', 'appinfo.json'), 'utf8')).version;
 
 function readAr(buf) {
   assert.strictEqual(buf.slice(0, 8).toString('ascii'), '!<arch>\n');
@@ -56,7 +57,7 @@ function build() {
 
 test('o .ipk tem o formato esperado e só os arquivos do app e do serviço', () => {
   const { name, bytes } = build();
-  assert.strictEqual(name, ID + '_0.1.0_all.ipk');
+  assert.strictEqual(name, ID + '_' + VERSION + '_all.ipk');
 
   const members = readAr(bytes);
   assert.deepStrictEqual(members.map((m) => m.name), ['debian-binary', 'control.tar.gz', 'data.tar.gz']);
@@ -64,7 +65,7 @@ test('o .ipk tem o formato esperado e só os arquivos do app e do serviço', () 
 
   const control = readTarGz(members[1].data)['./control'].data.toString();
   assert.match(control, new RegExp('^Package: ' + ID.replace(/\./g, '\\.') + '$', 'm'));
-  assert.match(control, /^Version: 0\.1\.0$/m);
+  assert.match(control, new RegExp('^Version: ' + VERSION.replace(/\./g, '\\.') + '$', 'm'));
 
   const data = readTarGz(members[2].data);
   const names = Object.keys(data);
@@ -84,7 +85,7 @@ test('o .ipk tem o formato esperado e só os arquivos do app e do serviço', () 
   assert.ok(names.every((n) => n.startsWith('./')));
 
   const info = JSON.parse(data[`./usr/palm/packages/${ID}/packageinfo.json`].data);
-  assert.deepStrictEqual(info, { app: ID, id: ID, version: '0.1.0', services: [ID + '.service'] });
+  assert.deepStrictEqual(info, { app: ID, id: ID, version: VERSION, services: [ID + '.service'] });
 });
 
 test('o build é reproduzível', () => {
