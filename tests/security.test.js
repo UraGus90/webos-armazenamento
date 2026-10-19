@@ -37,13 +37,32 @@ test('interface não injeta HTML nem executa texto como código', () => {
   ]);
 });
 
-test('serviço não usa shell, rede nem escrita em disco', () => {
+test('serviço não usa shell, rede nem cria/sobrescreve arquivos', () => {
   check(sources(path.join(ROOT, 'service'), '.js'), [
     [/\bexec\s*\(\s*['"`]|execSync|spawnSync|shell\s*:\s*true|require\(['"]child_process['"]\)\.exec\b/, 'shell'],
     [/\beval\s*\(|new Function\s*\(/, 'execução de texto'],
     [/require\(['"](https?|net|dgram|tls)['"]\)/, 'rede'],
-    [/writeFile|appendFile|unlink|rmdir|\brm\(|rmSync|mkdir|rename|chmod|chown|copyFile|createWriteStream/, 'escrita em disco'],
+    // Não escrevemos nem criamos arquivos; a única mutação permitida é apagar cache (unlink/rmdir), restrita a deps.js e clean.js.
+    [/writeFile|appendFile|mkdir|rename|chmod|chown|copyFile|createWriteStream|truncate/, 'criação/escrita de arquivo'],
   ]);
+});
+
+test('apagar arquivos (unlink/rmdir) só aparece em deps.js e clean.js', () => {
+  const allowed = new Set(['service/lib/deps.js', 'service/lib/clean.js']);
+  for (const file of sources(path.join(ROOT, 'service'), '.js')) {
+    const rel = path.relative(ROOT, file).split(path.sep).join('/');
+    if (allowed.has(rel)) continue;
+    assert.doesNotMatch(fs.readFileSync(file, 'utf8'), /unlink|rmdir|rmSync|\brm\b/, rel + ': deleção fora do módulo de limpeza');
+  }
+});
+
+test('o módulo de limpeza confina os alvos ao cache do Kodi', () => {
+  const text = fs.readFileSync(path.join(ROOT, 'service', 'lib', 'clean.js'), 'utf8');
+  // Caminhos fixos; a interface manda chave, nunca caminho. Confere allow-list e checagem de realpath.
+  assert.match(text, /org\.xbmc\.kodi/, 'alvos devem ser caminhos fixos do Kodi');
+  assert.match(text, /realpath/, 'deve reconferir o realpath antes de apagar');
+  assert.match(text, /startsWith\(CACHE_BASE\)/, 'deve exigir que o alvo fique dentro do cache');
+  assert.doesNotMatch(text, /params\s*\.\s*path|params\[/, 'não deve usar caminho vindo da interface');
 });
 
 test('index.html tem CSP restritiva e nenhum script ou estilo inline', () => {

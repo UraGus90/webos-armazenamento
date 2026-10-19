@@ -29,7 +29,8 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: "LG Smart UI", "Museo Sans", Roboto, "Segoe UI", Arial, sans-serif;
-  padding: 2.2rem 5vw 4.5rem;
+  /* Folga inferior maior que o rodapé fixo, para o último item nunca ficar escondido. */
+  padding: 2.2rem 5vw 6.5rem;
   overflow-x: hidden;
 }
 
@@ -110,6 +111,8 @@ main { max-width: 64rem; margin: 0 auto; }
 }
 .row.static { cursor: default; }
 .row:focus { background: var(--panel-focus); border-color: var(--focus); }
+/* Ao rolar o foco para a tela, deixa folga do topo e do rodapé fixo. */
+[data-focus] { scroll-margin: 1.5rem 0 6.5rem; }
 .row-head { display: flex; align-items: center; gap: 1rem; }
 .row-names { flex: 1; min-width: 0; display: flex; flex-direction: column; }
 .row-title { font-size: 1.1rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -152,6 +155,41 @@ main { max-width: 64rem; margin: 0 auto; }
   padding: 0.6rem 1.6rem; margin-top: 1rem; outline: none;
 }
 .retry:focus { border-color: var(--focus); background: var(--panel-focus); }
+
+/* Card de RAM (informativo) */
+.mem {
+  background: var(--panel);
+  border-radius: 1rem;
+  padding: 1.1rem 1.6rem;
+  margin-top: 1.2rem;
+}
+.mem-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
+.mem-head h2 { margin: 0; }
+.mem-sum { color: var(--muted); font-size: 0.95rem; }
+.mem .bar { height: 0.6rem; margin-top: 0.7rem; }
+
+/* Botão de ação em lista (manutenção) */
+.row.action {
+  text-align: left;
+  font-size: 1.15rem;
+  font-weight: 600;
+  padding: 1rem 1.1rem;
+}
+.row.action::after { content: '›'; float: right; color: var(--muted); font-size: 1.6rem; line-height: 1; }
+.row.action:focus::after { color: var(--focus); }
+
+/* Telas de confirmação/resultado da limpeza */
+.actions { margin-top: 1.6rem; display: flex; gap: 1rem; flex-wrap: wrap; }
+.btn {
+  font: inherit; font-size: 1.15rem; font-weight: 600;
+  color: var(--text); background: var(--panel);
+  border: 0.15rem solid var(--line); border-radius: 0.7rem;
+  padding: 0.8rem 1.8rem; outline: none; cursor: pointer;
+}
+.btn:focus { border-color: var(--focus); background: var(--panel-focus); }
+.btn-danger { border-left: 0.35rem solid var(--crit); }
+.btn-danger:focus { background: #3a2226; }
+.result-big { font-size: 2.4rem; font-weight: 700; color: var(--ok); margin: 0 0 0.6rem; }
 
 .keys {
   position: fixed; left: 0; right: 0; bottom: 0;

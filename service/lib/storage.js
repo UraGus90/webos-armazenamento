@@ -3,7 +3,7 @@
 // Leitura do armazenamento. Toda E/S passa por `deps` para poder ser simulada nos testes.
 
 const posix = require('path').posix;
-const { NAME_RE, InputError, parseDf, parseDu, isInside, resolveAllowed, parseUsbMounts } = require('./parse');
+const { NAME_RE, InputError, parseDf, parseDu, isInside, resolveAllowed, parseUsbMounts, parseMeminfo } = require('./parse');
 
 const PALM = '/media/developer/apps/usr/palm';
 const BROWSABLE_ROOTS = [PALM + '/applications', PALM + '/services'];
@@ -77,6 +77,14 @@ async function readDevApps(deps) {
   return { apps, partial };
 }
 
+function readMemory(deps) {
+  try {
+    return parseMeminfo(deps.readFile('/proc/meminfo'));
+  } catch (err) {
+    return null;
+  }
+}
+
 async function getOverview(deps) {
   let usb = [];
   try {
@@ -87,7 +95,13 @@ async function getOverview(deps) {
   const areaDefs = AREAS.concat(usb.map((path, i) => ({ id: 'usb' + (i + 1), path })));
   const areas = (await Promise.all(areaDefs.map((area) => readArea(deps, area)))).filter(Boolean);
   const { apps, partial } = await readDevApps(deps);
-  return { areas, apps, partial, generatedAt: deps.now() };
+  return { areas, apps, memory: readMemory(deps), partial, generatedAt: deps.now() };
+}
+
+// Tamanho total de uma pasta (du -s). Usado pela limpeza de cache.
+async function measure(deps, path) {
+  const du = await run(deps, BIN.du, ['-k', '-s', path]);
+  return { totalK: parseDu(du.stdout, path).totalK, partial: du.partial };
 }
 
 function isDir(deps, p) {
@@ -127,4 +141,4 @@ async function getUsage(deps, params) {
   };
 }
 
-module.exports = { getOverview, getUsage, BROWSABLE_ROOTS, BIN, MAX_CHILDREN, MAX_APPINFO_BYTES };
+module.exports = { getOverview, getUsage, measure, BROWSABLE_ROOTS, BIN, MAX_CHILDREN, MAX_APPINFO_BYTES };

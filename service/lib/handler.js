@@ -12,11 +12,15 @@ function errorResponse(err) {
   return { returnValue: false, errorCode: 'INTERNAL', errorText: 'Não foi possível ler o armazenamento.' };
 }
 
-function createHandler({ allowedSenders, deps, storage, log = () => {}, maxPending = MAX_PENDING }) {
+function createHandler({ allowedSenders, deps, storage, cleaner, log = () => {}, maxPending = MAX_PENDING }) {
   const methods = {
     getOverview: () => storage.getOverview(deps),
     getUsage: (payload) => storage.getUsage(deps, payload),
   };
+  if (cleaner) {
+    methods.getCleanables = () => cleaner.getCleanables(deps);
+    methods.clean = (payload) => cleaner.clean(deps, payload);
+  }
   let queue = Promise.resolve();
   let pending = 0;
 

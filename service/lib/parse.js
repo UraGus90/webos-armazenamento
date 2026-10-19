@@ -88,4 +88,19 @@ function parseUsbMounts(procMounts, usbRoot) {
   return Array.from(found).sort();
 }
 
-module.exports = { NAME_RE, InputError, parseDf, parseDu, isInside, resolveAllowed, parseUsbMounts };
+// /proc/meminfo: linhas "MemTotal:  1252016 kB". Usa MemAvailable (ou MemFree) como livre.
+function parseMeminfo(text) {
+  const get = (key) => {
+    const m = String(text).match(new RegExp('^' + key + ':\\s+(\\d{1,15})\\s+kB', 'm'));
+    return m ? Number(m[1]) : null;
+  };
+  const totalK = get('MemTotal');
+  const freeK = get('MemFree');
+  const availRaw = get('MemAvailable');
+  if (!totalK) return null;
+  const availK = availRaw !== null ? availRaw : freeK;
+  if (availK === null) return null;
+  return { totalK, availK, freeK: freeK !== null ? freeK : availK, usedK: Math.max(0, totalK - availK) };
+}
+
+module.exports = { NAME_RE, InputError, parseDf, parseDu, isInside, resolveAllowed, parseUsbMounts, parseMeminfo };

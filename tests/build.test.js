@@ -75,6 +75,7 @@ test('o .ipk tem o formato esperado e só os arquivos do app e do serviço', () 
     `./usr/palm/services/${ID}.service/service.js`,
     `./usr/palm/services/${ID}.service/services.json`,
     `./usr/palm/services/${ID}.service/lib/storage.js`,
+    `./usr/palm/services/${ID}.service/lib/clean.js`,
     `./usr/palm/packages/${ID}/packageinfo.json`,
   ]) {
     assert.ok(names.includes(required), 'faltando ' + required);

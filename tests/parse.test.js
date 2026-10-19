@@ -2,7 +2,7 @@
 
 const test = require('node:test');
 const assert = require('assert');
-const { parseDf, parseDu, resolveAllowed, parseUsbMounts, InputError } = require('../service/lib/parse');
+const { parseDf, parseDu, resolveAllowed, parseUsbMounts, parseMeminfo, InputError } = require('../service/lib/parse');
 
 const APPS = '/media/developer/apps/usr/palm/applications';
 const ROOTS = [APPS, '/media/developer/apps/usr/palm/services'];
@@ -85,6 +85,21 @@ test('resolveAllowed recusa entradas fora da área ou malformadas', () => {
   for (const value of bad) {
     assert.throws(() => resolveAllowed(value, ROOTS), InputError, 'deveria recusar: ' + String(value).slice(0, 60));
   }
+});
+
+test('parseMeminfo lê total/livre/disponível e calcula o usado', () => {
+  const out = [
+    'MemTotal:        1252016 kB',
+    'MemFree:           30604 kB',
+    'MemAvailable:     150036 kB',
+    'Buffers:            1040 kB',
+  ].join('\n');
+  assert.deepStrictEqual(parseMeminfo(out), { totalK: 1252016, availK: 150036, freeK: 30604, usedK: 1252016 - 150036 });
+  // Sem MemAvailable, cai para MemFree.
+  assert.deepStrictEqual(parseMeminfo('MemTotal: 100 kB\nMemFree: 40 kB'), { totalK: 100, availK: 40, freeK: 40, usedK: 60 });
+  assert.strictEqual(parseMeminfo('lixo'), null);
+  assert.strictEqual(parseMeminfo('MemFree: 40 kB'), null);
+  assert.strictEqual(parseMeminfo(''), null);
 });
 
 test('parseUsbMounts acha só montagens abaixo de /tmp/usb e decodifica octal', () => {
