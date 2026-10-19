@@ -78,6 +78,33 @@ test('erro de entrada é explicado; erro interno não vaza detalhes', async () =
   assert.deepStrictEqual(logs, ['getOverview: /usr/bin/du: segredo interno']);
 });
 
+test('expõe getCleanables/clean só quando um cleaner é fornecido', async () => {
+  const semCleaner = createHandler({ allowedSenders: [APP_ID], deps: {}, storage: {} });
+  const m0 = message(APP_ID, {});
+  await semCleaner('clean', m0);
+  assert.strictEqual(m0.responses[0].errorCode, 'UNKNOWN_METHOD');
+
+  const calls = [];
+  const comCleaner = createHandler({
+    allowedSenders: [APP_ID],
+    deps: { tag: 'd' },
+    storage: {},
+    cleaner: {
+      getCleanables: async (deps) => { calls.push(['getCleanables', deps.tag]); return { targets: [] }; },
+      clean: async (deps, payload) => { calls.push(['clean', payload]); return { freedK: 7 }; },
+    },
+  });
+  const m1 = message(APP_ID, { keys: ['temp'] });
+  await comCleaner('clean', m1);
+  assert.deepStrictEqual(m1.responses[0], { returnValue: true, freedK: 7 });
+
+  const m2 = message('com.outro.app', { keys: ['temp'] });
+  await comCleaner('clean', m2);
+  assert.strictEqual(m2.responses[0].errorCode, 'FORBIDDEN');
+
+  assert.deepStrictEqual(calls, [['clean', { keys: ['temp'] }]]);
+});
+
 test('executa um pedido por vez e recusa fila longa', async () => {
   const order = [];
   const gates = [deferred(), deferred()];

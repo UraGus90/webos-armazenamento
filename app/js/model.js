@@ -148,8 +148,56 @@
       segments: main ? buildSegments(main, apps) : [],
       apps: apps,
       others: others,
+      memory: buildMemory(data),
+      hasKodi: apps.some(function (a) { return a.id === 'org.xbmc.kodi'; }),
       partial: !!(data && data.partial),
       generatedAt: data && data.generatedAt
+    };
+  }
+
+  function isMem(m) {
+    return m && isSize(m.totalK) && m.totalK > 0 && isSize(m.usedK) && isSize(m.availK);
+  }
+
+  function buildMemory(data) {
+    var m = data && data.memory;
+    if (!isMem(m)) return null;
+    var usedPct = percent(m.usedK, m.totalK);
+    return {
+      totalK: m.totalK, usedK: m.usedK, availK: m.availK,
+      freeK: isSize(m.freeK) ? m.freeK : m.availK,
+      usedPct: usedPct, level: level(usedPct)
+    };
+  }
+
+  // Alvos de limpeza vindos do serviço: valida e calcula o total selecionável.
+  function buildCleanables(data) {
+    var raw = data && Array.isArray(data.targets) ? data.targets : [];
+    var targets = raw
+      .filter(function (t) { return t && typeof t.key === 'string' && typeof t.label === 'string'; })
+      .map(function (t) {
+        return {
+          key: t.key, label: t.label,
+          sizeK: isSize(t.sizeK) ? t.sizeK : 0,
+          exists: t.exists !== false,
+          unknown: t.sizeK === null
+        };
+      });
+    var selectable = targets.filter(function (t) { return t.exists; });
+    var totalK = selectable.reduce(function (s, t) { return s + t.sizeK; }, 0);
+    return {
+      targets: targets,
+      keys: selectable.map(function (t) { return t.key; }),
+      totalK: totalK,
+      partial: !!(data && data.partial),
+      any: selectable.length > 0
+    };
+  }
+
+  function buildCleanResult(data) {
+    return {
+      freedK: isSize(data && data.freedK) ? data.freedK : 0,
+      partial: !!(data && data.partial)
     };
   }
 
@@ -181,6 +229,7 @@
   return {
     formatSize: formatSize, percent: percent, formatPercent: formatPercent, level: level,
     formatTime: formatTime, hintFor: hintFor, displayPath: displayPath,
-    buildOverview: buildOverview, buildFolder: buildFolder
+    buildOverview: buildOverview, buildFolder: buildFolder,
+    buildMemory: buildMemory, buildCleanables: buildCleanables, buildCleanResult: buildCleanResult
   };
 });

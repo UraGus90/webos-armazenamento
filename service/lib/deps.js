@@ -31,6 +31,14 @@ function createDeps() {
     statSize: (p) => fs.statSync(p).size,
     realpath: (p) => fs.realpathSync(p),
     isDir: (p) => fs.lstatSync(p).isDirectory(),
+    // Usados só pela limpeza de cache (clean.js).
+    readdir: (p) => fs.readdirSync(p),
+    lstat: (p) => {
+      const s = fs.lstatSync(p);
+      return { isDir: s.isDirectory(), isSymlink: s.isSymbolicLink(), size: s.size };
+    },
+    unlink: (p) => fs.unlinkSync(p),
+    rmdir: (p) => fs.rmdirSync(p),
     now: () => new Date().toISOString(),
   };
 }

@@ -119,6 +119,52 @@ test('buildFolder calcula porcentagens, dicas e itens ocultos', () => {
   assert.strictEqual(model.items[2].path, null);
 });
 
+test('buildMemory calcula uso e nível; rejeita entrada inválida', () => {
+  const mem = M.buildMemory({ memory: { totalK: 1000, availK: 100, freeK: 50, usedK: 900 } });
+  assert.strictEqual(mem.usedK, 900);
+  assert.strictEqual(mem.freeK, 50);
+  assert.strictEqual(Math.round(mem.usedPct), 90);
+  assert.strictEqual(mem.level, 'crit');
+  for (const data of [undefined, {}, { memory: null }, { memory: { totalK: 0, availK: 0, usedK: 0 } }, { memory: { totalK: 'x' } }]) {
+    assert.strictEqual(M.buildMemory(data), null);
+  }
+});
+
+test('buildOverview expõe memory e hasKodi', () => {
+  const model = M.buildOverview({
+    areas: [{ id: 'apps', totalK: 100, usedK: 40, availK: 60 }],
+    apps: [{ id: 'org.xbmc.kodi', kind: 'app', title: 'Kodi', sizeK: 20, path: '/k' }],
+    memory: { totalK: 1000, availK: 400, usedK: 600 },
+  });
+  assert.strictEqual(model.hasKodi, true);
+  assert.ok(model.memory && model.memory.usedK === 600);
+  assert.strictEqual(M.buildOverview({ areas: [], apps: [] }).hasKodi, false);
+});
+
+test('buildCleanables filtra, soma o selecionável e lista as chaves', () => {
+  const model = M.buildCleanables({
+    targets: [
+      { key: 'thumbnails', label: 'Miniaturas', sizeK: 22000, exists: true },
+      { key: 'packages', label: 'Pacotes', sizeK: null, exists: true },
+      { key: 'temp', label: 'Temp', sizeK: 500, exists: false },
+      { key: 'x' },
+    ],
+    partial: true,
+  });
+  assert.deepStrictEqual(model.keys, ['thumbnails', 'packages']);
+  assert.strictEqual(model.totalK, 22000); // packages com tamanho desconhecido conta como 0
+  assert.strictEqual(model.targets.find((t) => t.key === 'packages').unknown, true);
+  assert.strictEqual(model.any, true);
+  assert.strictEqual(model.partial, true);
+  assert.strictEqual(M.buildCleanables({}).any, false);
+});
+
+test('buildCleanResult normaliza os bytes liberados', () => {
+  assert.deepStrictEqual(M.buildCleanResult({ freedK: 2048, partial: false }), { freedK: 2048, partial: false });
+  assert.deepStrictEqual(M.buildCleanResult({}), { freedK: 0, partial: false });
+  assert.deepStrictEqual(M.buildCleanResult({ freedK: -5, partial: true }), { freedK: 0, partial: true });
+});
+
 test('buildFolder usa a soma quando o du não trouxe o total', () => {
   const model = M.buildFolder({ path: '/p', totalK: null, children: [{ name: 'a', sizeK: 30 }, { name: 'b', sizeK: 10 }] });
   assert.strictEqual(model.totalK, 40);

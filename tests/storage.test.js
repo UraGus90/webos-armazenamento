@@ -174,6 +174,26 @@ test('getUsage passa nomes estranhos como um único argumento, sem shell', async
   assert.deepStrictEqual(deps.calls[0], { file: '/usr/bin/du', args: ['-k', '-a', '-d', '1', dir] });
 });
 
+test('getOverview inclui a memória quando /proc/meminfo existe', async () => {
+  const deps = fakeDeps({
+    outputs: overviewOutputs(),
+    files: { '/proc/mounts': '', '/proc/meminfo': 'MemTotal: 1252016 kB\nMemFree: 30604 kB\nMemAvailable: 150036 kB\n' },
+  });
+  const result = await storage.getOverview(deps);
+  assert.deepStrictEqual(result.memory, { totalK: 1252016, availK: 150036, freeK: 30604, usedK: 1252016 - 150036 });
+});
+
+test('getOverview deixa memory nulo se /proc/meminfo não puder ser lido', async () => {
+  const deps = fakeDeps({ outputs: overviewOutputs(), files: { '/proc/mounts': '' } });
+  assert.strictEqual((await storage.getOverview(deps)).memory, null);
+});
+
+test('measure devolve o total de uma pasta (du -s)', async () => {
+  const dir = APPS + '/org.xbmc.kodi/.kodi/temp';
+  const deps = fakeDeps({ outputs: { [`/usr/bin/du -k -s ${dir}`]: `480\t${dir}\n` } });
+  assert.deepStrictEqual(await storage.measure(deps, dir), { totalK: 480, partial: false });
+});
+
 test('getUsage aproveita saída parcial do du e falha limpo em timeout', async () => {
   const dir = APPS + '/kodi';
   const partialErr = Object.assign(new Error('exit 1'), { stdout: `10\t${dir}/a\n10\t${dir}\n` });

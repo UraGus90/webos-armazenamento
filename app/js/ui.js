@@ -89,6 +89,29 @@
     return card;
   }
 
+  function memoryCard(mem) {
+    var card = el('section', 'mem');
+    var headRow = el('div', 'mem-head');
+    headRow.appendChild(el('h2', null, 'Memória (RAM)'));
+    headRow.appendChild(el('span', 'mem-sum', M.formatSize(mem.freeK) + ' livres de ' + M.formatSize(mem.totalK)));
+    card.appendChild(headRow);
+    card.appendChild(bar(mem.usedPct, 'level-' + mem.level));
+    card.appendChild(el('p', 'note', 'A TV gerencia a RAM sozinha. Sem root, não há como liberá-la — este número é só informativo.'));
+    return card;
+  }
+
+  function maintenance(handlers) {
+    var s = section('Manutenção');
+    var btn = el('button', 'row action', 'Limpar cache do Kodi');
+    btn.type = 'button';
+    btn.setAttribute('data-focus', '');
+    btn.setAttribute('data-key', 'clean');
+    btn.addEventListener('click', handlers.openClean);
+    s.appendChild(btn);
+    s.appendChild(el('p', 'note', 'Apaga miniaturas, pacotes de add-ons e temporários do Kodi. Seguro: o Kodi recria o que precisar.'));
+    return s;
+  }
+
   function overview(view, model, handlers) {
     clear(view);
     if (!model.main) {
@@ -96,6 +119,7 @@
     } else {
       view.appendChild(hero(model.main, model.segments));
     }
+    if (model.memory) view.appendChild(memoryCard(model.memory));
 
     var appsSection = section('Apps de desenvolvedor',
       'Apps da LG Content Store não podem ser medidos um a um sem root; estão somados em “Sistema, apps da loja e dados”.');
@@ -122,7 +146,66 @@
       });
       view.appendChild(othersSection);
     }
+    view.appendChild(maintenance(handlers));
     if (model.partial) partialNotice(view);
+  }
+
+  function actionButton(label, key, className, onSelect) {
+    var btn = el('button', 'btn ' + className, label);
+    btn.type = 'button';
+    btn.setAttribute('data-focus', '');
+    btn.setAttribute('data-key', key);
+    btn.addEventListener('click', onSelect);
+    return btn;
+  }
+
+  function cleanConfirm(view, model, handlers) {
+    clear(view);
+    var head = el('section', 'folder-head');
+    head.appendChild(el('h2', null, 'Limpar cache do Kodi'));
+    head.appendChild(el('p', 'hero-sub', model.any
+      ? 'Será liberado cerca de ' + M.formatSize(model.totalK) + '.'
+      : 'Nada do Kodi para limpar no momento.'));
+    view.appendChild(head);
+
+    if (!model.any) {
+      var only = el('section', 'actions');
+      only.appendChild(actionButton('Voltar', 'cancel', 'btn-plain', handlers.cancel));
+      view.appendChild(only);
+      return;
+    }
+
+    var list = el('section', 'section');
+    model.targets.forEach(function (t) {
+      var r = el('div', 'row static');
+      var h = el('div', 'row-head');
+      h.appendChild(el('div', 'row-title', t.label));
+      var size = el('div', 'row-size');
+      size.appendChild(el('span', 'size', t.exists ? (t.unknown ? '—' : M.formatSize(t.sizeK)) : 'ausente'));
+      h.appendChild(size);
+      r.appendChild(h);
+      list.appendChild(r);
+    });
+    view.appendChild(list);
+
+    var actions = el('section', 'actions');
+    actions.appendChild(actionButton('Confirmar e limpar', 'confirm', 'btn-danger',
+      function () { handlers.confirm(model.keys); }));
+    actions.appendChild(actionButton('Cancelar', 'cancel', 'btn-plain', handlers.cancel));
+    view.appendChild(actions);
+
+    if (model.partial) partialNotice(view);
+  }
+
+  function cleanResult(view, model, handlers) {
+    clear(view);
+    var box = el('div', 'state');
+    box.appendChild(el('p', 'result-big', M.formatSize(model.freedK) + ' liberados'));
+    if (model.partial) {
+      box.appendChild(el('p', 'note', 'Alguns itens não puderam ser apagados (em uso ou sem permissão).'));
+    }
+    box.appendChild(actionButton('Voltar', 'done', 'btn-plain', handlers.done));
+    view.appendChild(box);
   }
 
   function folder(view, model, handlers) {
@@ -171,5 +254,8 @@
     view.appendChild(box);
   }
 
-  root.UI = { overview: overview, folder: folder, loading: loading, error: error };
+  root.UI = {
+    overview: overview, folder: folder, loading: loading, error: error,
+    cleanConfirm: cleanConfirm, cleanResult: cleanResult
+  };
 })(this);

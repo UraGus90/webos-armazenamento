@@ -1,3589 +1,3595 @@
 {
- "overview": {
-  "areas": [
-   {
-    "id": "apps",
-    "path": "/media/developer",
-    "device": "/dev/mmcblk0p59",
-    "totalK": 1433616,
-    "usedK": 595156,
-    "availK": 822076
-   },
-   {
-    "id": "prefs",
-    "path": "/var/luna/preferences",
-    "device": "/dev/mmcblk0p58",
-    "totalK": 738048,
-    "usedK": 167912,
-    "availK": 516376
-   },
-   {
-    "id": "tmp",
-    "path": "/tmp",
-    "device": "tmpfs",
-    "totalK": 626008,
-    "usedK": 20196,
-    "availK": 605812
-   }
-  ],
-  "apps": [
-   {
-    "id": "org.xbmc.kodi",
-    "kind": "app",
-    "title": "Kodi",
-    "sizeK": 320636,
-    "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi"
-   },
-   {
-    "id": "youtube.leanback.v4",
-    "kind": "app",
-    "title": "YouTube AdFree",
-    "sizeK": 1820,
-    "path": "/media/developer/apps/usr/palm/applications/youtube.leanback.v4"
-   },
-   {
-    "id": "com.pirate.refresh",
-    "kind": "app",
-    "title": "Auto Token Refresh",
-    "sizeK": 188,
-    "path": "/media/developer/apps/usr/palm/applications/com.pirate.refresh"
-   },
-   {
-    "id": "com.pirate.refresh.service",
-    "kind": "service",
-    "title": null,
-    "sizeK": 16,
-    "path": "/media/developer/apps/usr/palm/services/com.pirate.refresh.service"
-   }
-  ],
-  "partial": false,
-  "generatedAt": "2026-10-19T15:26:49.759Z"
- },
- "folders": {
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi",
-   "totalK": 320636,
-   "children": [
-    {
-     "name": "addons",
-     "sizeK": 134996,
-     "isDir": true
-    },
-    {
-     "name": "kodi-webos",
-     "sizeK": 72480,
-     "isDir": false
-    },
-    {
-     "name": ".kodi",
-     "sizeK": 58224,
-     "isDir": true
-    },
-    {
-     "name": "lib",
-     "sizeK": 46504,
-     "isDir": true
-    },
-    {
-     "name": "media",
-     "sizeK": 5828,
-     "isDir": true
-    },
-    {
-     "name": "system",
-     "sizeK": 2556,
-     "isDir": true
-    },
-    {
-     "name": "userdata",
-     "sizeK": 20,
-     "isDir": true
-    },
-    {
-     "name": ".config",
-     "sizeK": 12,
-     "isDir": true
-    },
-    {
-     "name": "appinfo.json",
-     "sizeK": 4,
-     "isDir": false
-    },
-    {
-     "name": "icon.png",
-     "sizeK": 4,
-     "isDir": false
-    },
-    {
-     "name": "largeIcon.png",
-     "sizeK": 4,
-     "isDir": false
+  "overview": {
+    "areas": [
+      {
+        "id": "apps",
+        "path": "/media/developer",
+        "device": "/dev/mmcblk0p59",
+        "totalK": 1433616,
+        "usedK": 595156,
+        "availK": 822076
+      },
+      {
+        "id": "prefs",
+        "path": "/var/luna/preferences",
+        "device": "/dev/mmcblk0p58",
+        "totalK": 738048,
+        "usedK": 167912,
+        "availK": 516376
+      },
+      {
+        "id": "tmp",
+        "path": "/tmp",
+        "device": "tmpfs",
+        "totalK": 626008,
+        "usedK": 20196,
+        "availK": 605812
+      }
+    ],
+    "apps": [
+      {
+        "id": "org.xbmc.kodi",
+        "kind": "app",
+        "title": "Kodi",
+        "sizeK": 320636,
+        "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi"
+      },
+      {
+        "id": "youtube.leanback.v4",
+        "kind": "app",
+        "title": "YouTube AdFree",
+        "sizeK": 1820,
+        "path": "/media/developer/apps/usr/palm/applications/youtube.leanback.v4"
+      },
+      {
+        "id": "com.pirate.refresh",
+        "kind": "app",
+        "title": "Auto Token Refresh",
+        "sizeK": 188,
+        "path": "/media/developer/apps/usr/palm/applications/com.pirate.refresh"
+      },
+      {
+        "id": "com.pirate.refresh.service",
+        "kind": "service",
+        "title": null,
+        "sizeK": 16,
+        "path": "/media/developer/apps/usr/palm/services/com.pirate.refresh.service"
+      }
+    ],
+    "partial": false,
+    "generatedAt": "2026-10-19T15:26:49.759Z",
+    "memory": {
+      "totalK": 1252016,
+      "availK": 150036,
+      "freeK": 30604,
+      "usedK": 1101980
     }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
   },
-  "/media/developer/apps/usr/palm/applications/youtube.leanback.v4": {
-   "path": "/media/developer/apps/usr/palm/applications/youtube.leanback.v4",
-   "totalK": 1820,
-   "children": [
-    {
-     "name": "webOSUserScripts",
-     "sizeK": 1352,
-     "isDir": true
+  "folders": {
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi",
+      "totalK": 320636,
+      "children": [
+        {
+          "name": "addons",
+          "sizeK": 134996,
+          "isDir": true
+        },
+        {
+          "name": "kodi-webos",
+          "sizeK": 72480,
+          "isDir": false
+        },
+        {
+          "name": ".kodi",
+          "sizeK": 58224,
+          "isDir": true
+        },
+        {
+          "name": "lib",
+          "sizeK": 46504,
+          "isDir": true
+        },
+        {
+          "name": "media",
+          "sizeK": 5828,
+          "isDir": true
+        },
+        {
+          "name": "system",
+          "sizeK": 2556,
+          "isDir": true
+        },
+        {
+          "name": "userdata",
+          "sizeK": 20,
+          "isDir": true
+        },
+        {
+          "name": ".config",
+          "sizeK": 12,
+          "isDir": true
+        },
+        {
+          "name": "appinfo.json",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "icon.png",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "largeIcon.png",
+          "sizeK": 4,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
     },
-    {
-     "name": "index.js.map",
-     "sizeK": 332,
-     "isDir": false
+    "/media/developer/apps/usr/palm/applications/youtube.leanback.v4": {
+      "path": "/media/developer/apps/usr/palm/applications/youtube.leanback.v4",
+      "totalK": 1820,
+      "children": [
+        {
+          "name": "webOSUserScripts",
+          "sizeK": 1352,
+          "isDir": true
+        },
+        {
+          "name": "index.js.map",
+          "sizeK": 332,
+          "isDir": false
+        },
+        {
+          "name": "index.js",
+          "sizeK": 68,
+          "isDir": false
+        },
+        {
+          "name": "bgImage.png",
+          "sizeK": 20,
+          "isDir": false
+        },
+        {
+          "name": "imageForRecents.png",
+          "sizeK": 8,
+          "isDir": false
+        },
+        {
+          "name": "appinfo.json",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "extraLargeIcon.png",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "icon.png",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "icon.svg",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "index.html",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "largeIcon.png",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "mediumLargeIcon.png",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "playIcon.png",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "splashBackground-v1.png",
+          "sizeK": 4,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
     },
-    {
-     "name": "index.js",
-     "sizeK": 68,
-     "isDir": false
+    "/media/developer/apps/usr/palm/applications/com.pirate.refresh": {
+      "path": "/media/developer/apps/usr/palm/applications/com.pirate.refresh",
+      "totalK": 188,
+      "children": [
+        {
+          "name": "icon.png",
+          "sizeK": 44,
+          "isDir": false
+        },
+        {
+          "name": "largeIcon.png",
+          "sizeK": 44,
+          "isDir": false
+        },
+        {
+          "name": "webOSTVjs-1.2.11",
+          "sizeK": 32,
+          "isDir": true
+        },
+        {
+          "name": "webOSjs-0.1.0",
+          "sizeK": 28,
+          "isDir": true
+        },
+        {
+          "name": "app.js",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "alert.css",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "appinfo.json",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "http.js",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "index.html",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "native-alerts.js",
+          "sizeK": 4,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
     },
-    {
-     "name": "bgImage.png",
-     "sizeK": 20,
-     "isDir": false
+    "/media/developer/apps/usr/palm/services/com.pirate.refresh.service": {
+      "path": "/media/developer/apps/usr/palm/services/com.pirate.refresh.service",
+      "totalK": 16,
+      "children": [
+        {
+          "name": "helloworld_service.js",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "package.json",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "services.json",
+          "sizeK": 4,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
     },
-    {
-     "name": "imageForRecents.png",
-     "sizeK": 8,
-     "isDir": false
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons",
+      "totalK": 134996,
+      "children": [
+        {
+          "name": "inputstream.ffmpegdirect",
+          "sizeK": 22456,
+          "isDir": true
+        },
+        {
+          "name": "webinterface.default",
+          "sizeK": 9192,
+          "isDir": true
+        },
+        {
+          "name": "skin.estuary",
+          "sizeK": 8404,
+          "isDir": true
+        },
+        {
+          "name": "pvr.zattoo",
+          "sizeK": 6272,
+          "isDir": true
+        },
+        {
+          "name": "inputstream.rtmp",
+          "sizeK": 5548,
+          "isDir": true
+        },
+        {
+          "name": "pvr.iptvsimple",
+          "sizeK": 5172,
+          "isDir": true
+        },
+        {
+          "name": "resource.images.weathericons.default",
+          "sizeK": 4760,
+          "isDir": true
+        },
+        {
+          "name": "inputstream.adaptive",
+          "sizeK": 4704,
+          "isDir": true
+        },
+        {
+          "name": "pvr.freebox",
+          "sizeK": 4368,
+          "isDir": true
+        },
+        {
+          "name": "pvr.mythtv",
+          "sizeK": 3648,
+          "isDir": true
+        },
+        {
+          "name": "pvr.stalker",
+          "sizeK": 2992,
+          "isDir": true
+        },
+        {
+          "name": "pvr.waipu",
+          "sizeK": 2976,
+          "isDir": true
+        },
+        {
+          "name": "peripheral.joystick",
+          "sizeK": 2940,
+          "isDir": true
+        },
+        {
+          "name": "pvr.mediaportal.tvserver",
+          "sizeK": 2776,
+          "isDir": true
+        },
+        {
+          "name": "pvr.hts",
+          "sizeK": 2736,
+          "isDir": true
+        },
+        {
+          "name": "pvr.dvblink",
+          "sizeK": 2556,
+          "isDir": true
+        },
+        {
+          "name": "pvr.plutotv",
+          "sizeK": 2556,
+          "isDir": true
+        },
+        {
+          "name": "pvr.teleboy",
+          "sizeK": 2348,
+          "isDir": true
+        },
+        {
+          "name": "pvr.vdr.vnsi",
+          "sizeK": 2268,
+          "isDir": true
+        },
+        {
+          "name": "pvr.vbox",
+          "sizeK": 2248,
+          "isDir": true
+        },
+        {
+          "name": "pvr.nextpvr",
+          "sizeK": 2176,
+          "isDir": true
+        },
+        {
+          "name": "pvr.argustv",
+          "sizeK": 1960,
+          "isDir": true
+        },
+        {
+          "name": "pvr.filmon",
+          "sizeK": 1952,
+          "isDir": true
+        },
+        {
+          "name": "pvr.hdhomerun",
+          "sizeK": 1920,
+          "isDir": true
+        },
+        {
+          "name": "pvr.pctv",
+          "sizeK": 1904,
+          "isDir": true
+        },
+        {
+          "name": "pvr.octonet",
+          "sizeK": 1796,
+          "isDir": true
+        },
+        {
+          "name": "pvr.dvbviewer",
+          "sizeK": 1768,
+          "isDir": true
+        },
+        {
+          "name": "pvr.njoy",
+          "sizeK": 1708,
+          "isDir": true
+        },
+        {
+          "name": "game.controller.keyboard",
+          "sizeK": 1624,
+          "isDir": true
+        },
+        {
+          "name": "pvr.wmc",
+          "sizeK": 1384,
+          "isDir": true
+        },
+        {
+          "name": "pvr.sledovanitv.cz",
+          "sizeK": 1356,
+          "isDir": true
+        },
+        {
+          "name": "pvr.demo",
+          "sizeK": 1320,
+          "isDir": true
+        },
+        {
+          "name": "service.xbmc.versioncheck",
+          "sizeK": 1212,
+          "isDir": true
+        },
+        {
+          "name": "game.controller.default",
+          "sizeK": 1192,
+          "isDir": true
+        },
+        {
+          "name": "game.controller.mouse",
+          "sizeK": 1044,
+          "isDir": true
+        },
+        {
+          "name": "game.controller.snes",
+          "sizeK": 1004,
+          "isDir": true
+        },
+        {
+          "name": "metadata.artists.universal",
+          "sizeK": 900,
+          "isDir": true
+        },
+        {
+          "name": "metadata.generic.albums",
+          "sizeK": 880,
+          "isDir": true
+        },
+        {
+          "name": "metadata.tvshows.themoviedb.org.python",
+          "sizeK": 832,
+          "isDir": true
+        },
+        {
+          "name": "metadata.themoviedb.org.python",
+          "sizeK": 828,
+          "isDir": true
+        }
+      ],
+      "hiddenCount": 45,
+      "hiddenK": 5312,
+      "partial": false
     },
-    {
-     "name": "appinfo.json",
-     "sizeK": 4,
-     "isDir": false
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi",
+      "totalK": 58224,
+      "children": [
+        {
+          "name": "addons",
+          "sizeK": 31956,
+          "isDir": true
+        },
+        {
+          "name": "userdata",
+          "sizeK": 25776,
+          "isDir": true
+        },
+        {
+          "name": "temp",
+          "sizeK": 480,
+          "isDir": true
+        },
+        {
+          "name": "media",
+          "sizeK": 4,
+          "isDir": true
+        },
+        {
+          "name": "system",
+          "sizeK": 4,
+          "isDir": true
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
     },
-    {
-     "name": "extraLargeIcon.png",
-     "sizeK": 4,
-     "isDir": false
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/lib": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/lib",
+      "totalK": 46504,
+      "children": [
+        {
+          "name": "python3.14",
+          "sizeK": 46020,
+          "isDir": true
+        },
+        {
+          "name": "libshairplay.so.0.0.0",
+          "sizeK": 196,
+          "isDir": false
+        },
+        {
+          "name": "gst-plugin-scanner",
+          "sizeK": 72,
+          "isDir": false
+        },
+        {
+          "name": "libatomic.so.1.2.0",
+          "sizeK": 68,
+          "isDir": false
+        },
+        {
+          "name": "libcrypt-2.12.2.so",
+          "sizeK": 68,
+          "isDir": false
+        },
+        {
+          "name": "libdrm.so.2.134.0",
+          "sizeK": 68,
+          "isDir": false
+        },
+        {
+          "name": "libAcbAPI.so.1.0.0",
+          "sizeK": 8,
+          "isDir": false
+        },
+        {
+          "name": "libAcbAPI.so.1",
+          "sizeK": 0,
+          "isDir": false
+        },
+        {
+          "name": "libatomic.so.1",
+          "sizeK": 0,
+          "isDir": false
+        },
+        {
+          "name": "libcrypt.so.1",
+          "sizeK": 0,
+          "isDir": false
+        },
+        {
+          "name": "libdrm.so.2",
+          "sizeK": 0,
+          "isDir": false
+        },
+        {
+          "name": "libshairplay.so.0",
+          "sizeK": 0,
+          "isDir": false
+        },
+        {
+          "name": "python3",
+          "sizeK": 0,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
     },
-    {
-     "name": "icon.png",
-     "sizeK": 4,
-     "isDir": false
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/media": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/media",
+      "totalK": 5828,
+      "children": [
+        {
+          "name": "Fonts",
+          "sizeK": 4644,
+          "isDir": true
+        },
+        {
+          "name": "qr",
+          "sizeK": 712,
+          "isDir": true
+        },
+        {
+          "name": "splash.jpg",
+          "sizeK": 380,
+          "isDir": false
+        },
+        {
+          "name": "icon256x256.png",
+          "sizeK": 24,
+          "isDir": false
+        },
+        {
+          "name": "applaunch_screen.png",
+          "sizeK": 12,
+          "isDir": false
+        },
+        {
+          "name": "banner.png",
+          "sizeK": 12,
+          "isDir": false
+        },
+        {
+          "name": "vendor_logo.png",
+          "sizeK": 12,
+          "isDir": false
+        },
+        {
+          "name": "icon120x120.png",
+          "sizeK": 8,
+          "isDir": false
+        },
+        {
+          "name": "icon16x16.png",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "icon32x32.png",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "icon48x48.png",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "icon80x80.png",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "vendor_icon.png",
+          "sizeK": 4,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
     },
-    {
-     "name": "icon.svg",
-     "sizeK": 4,
-     "isDir": false
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/system": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/system",
+      "totalK": 2556,
+      "children": [
+        {
+          "name": "language-subtag-registry.txt",
+          "sizeK": 716,
+          "isDir": false
+        },
+        {
+          "name": "shaders",
+          "sizeK": 428,
+          "isDir": true
+        },
+        {
+          "name": "library",
+          "sizeK": 368,
+          "isDir": true
+        },
+        {
+          "name": "settings",
+          "sizeK": 248,
+          "isDir": true
+        },
+        {
+          "name": "certs",
+          "sizeK": 228,
+          "isDir": true
+        },
+        {
+          "name": "keymaps",
+          "sizeK": 200,
+          "isDir": true
+        },
+        {
+          "name": "players",
+          "sizeK": 184,
+          "isDir": true
+        },
+        {
+          "name": "keyboardlayouts",
+          "sizeK": 128,
+          "isDir": true
+        },
+        {
+          "name": "Lircmap.xml",
+          "sizeK": 20,
+          "isDir": false
+        },
+        {
+          "name": "colors.xml",
+          "sizeK": 8,
+          "isDir": false
+        },
+        {
+          "name": "dialogcolors.xml",
+          "sizeK": 8,
+          "isDir": false
+        },
+        {
+          "name": "peripherals.xml",
+          "sizeK": 8,
+          "isDir": false
+        },
+        {
+          "name": "addon-manifest.xml",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "playercorefactory.xml",
+          "sizeK": 4,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
     },
-    {
-     "name": "index.html",
-     "sizeK": 4,
-     "isDir": false
+    "/media/developer/apps/usr/palm/applications/youtube.leanback.v4/webOSUserScripts": {
+      "path": "/media/developer/apps/usr/palm/applications/youtube.leanback.v4/webOSUserScripts",
+      "totalK": 1352,
+      "children": [
+        {
+          "name": "userScript.js.map",
+          "sizeK": 1088,
+          "isDir": false
+        },
+        {
+          "name": "userScript.js",
+          "sizeK": 256,
+          "isDir": false
+        },
+        {
+          "name": "userScript.js.LICENSE.txt",
+          "sizeK": 4,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
     },
-    {
-     "name": "largeIcon.png",
-     "sizeK": 4,
-     "isDir": false
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/inputstream.ffmpegdirect": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/inputstream.ffmpegdirect",
+      "totalK": 22456,
+      "children": [
+        {
+          "name": "inputstream.ffmpegdirect.so.22.2.10",
+          "sizeK": 21252,
+          "isDir": false
+        },
+        {
+          "name": "resources",
+          "sizeK": 1016,
+          "isDir": true
+        },
+        {
+          "name": "fanart.jpg",
+          "sizeK": 148,
+          "isDir": false
+        },
+        {
+          "name": "addon.xml",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "changelog.txt",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "icon.png",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "inputstream.ffmpegdirect.so",
+          "sizeK": 0,
+          "isDir": false
+        },
+        {
+          "name": "inputstream.ffmpegdirect.so.22.0",
+          "sizeK": 0,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
     },
-    {
-     "name": "mediumLargeIcon.png",
-     "sizeK": 4,
-     "isDir": false
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/webinterface.default": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/webinterface.default",
+      "totalK": 9192,
+      "children": [
+        {
+          "name": "themes",
+          "sizeK": 3932,
+          "isDir": true
+        },
+        {
+          "name": "screenshots",
+          "sizeK": 1480,
+          "isDir": true
+        },
+        {
+          "name": "lang",
+          "sizeK": 1232,
+          "isDir": true
+        },
+        {
+          "name": "lib",
+          "sizeK": 972,
+          "isDir": true
+        },
+        {
+          "name": "js",
+          "sizeK": 904,
+          "isDir": true
+        },
+        {
+          "name": "images",
+          "sizeK": 616,
+          "isDir": true
+        },
+        {
+          "name": "addon.xml",
+          "sizeK": 12,
+          "isDir": false
+        },
+        {
+          "name": "videoPlayer.html",
+          "sizeK": 8,
+          "isDir": false
+        },
+        {
+          "name": "favicon.png",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "icon-128.png",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "icon-144.png",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "icon-152.png",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "icon-192.png",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "icon.png",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "index.html",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "manifest.json",
+          "sizeK": 4,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
     },
-    {
-     "name": "playIcon.png",
-     "sizeK": 4,
-     "isDir": false
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/skin.estuary": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/skin.estuary",
+      "totalK": 8404,
+      "children": [
+        {
+          "name": "language",
+          "sizeK": 1824,
+          "isDir": true
+        },
+        {
+          "name": "media",
+          "sizeK": 1448,
+          "isDir": true
+        },
+        {
+          "name": "xml",
+          "sizeK": 1368,
+          "isDir": true
+        },
+        {
+          "name": "resources",
+          "sizeK": 1144,
+          "isDir": true
+        },
+        {
+          "name": "extras",
+          "sizeK": 960,
+          "isDir": true
+        },
+        {
+          "name": "fonts",
+          "sizeK": 956,
+          "isDir": true
+        },
+        {
+          "name": "themes",
+          "sizeK": 548,
+          "isDir": true
+        },
+        {
+          "name": "colors",
+          "sizeK": 60,
+          "isDir": true
+        },
+        {
+          "name": "playlists",
+          "sizeK": 56,
+          "isDir": true
+        },
+        {
+          "name": "addon.xml",
+          "sizeK": 28,
+          "isDir": false
+        },
+        {
+          "name": "LICENSE.txt",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "changelog.txt",
+          "sizeK": 4,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
     },
-    {
-     "name": "splashBackground-v1.png",
-     "sizeK": 4,
-     "isDir": false
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/pvr.zattoo": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/pvr.zattoo",
+      "totalK": 6272,
+      "children": [
+        {
+          "name": "resources",
+          "sizeK": 4016,
+          "isDir": true
+        },
+        {
+          "name": "pvr.zattoo.so.22.2.3",
+          "sizeK": 2136,
+          "isDir": false
+        },
+        {
+          "name": "fanart.jpg",
+          "sizeK": 60,
+          "isDir": false
+        },
+        {
+          "name": "icon.png",
+          "sizeK": 20,
+          "isDir": false
+        },
+        {
+          "name": "LICENSE.txt",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "changelog.txt",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "addon.xml",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "pvr.zattoo.so",
+          "sizeK": 0,
+          "isDir": false
+        },
+        {
+          "name": "pvr.zattoo.so.22.0",
+          "sizeK": 0,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
+    },
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/inputstream.rtmp": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/inputstream.rtmp",
+      "totalK": 5548,
+      "children": [
+        {
+          "name": "inputstream.rtmp.so.22.1.3",
+          "sizeK": 4848,
+          "isDir": false
+        },
+        {
+          "name": "resources",
+          "sizeK": 632,
+          "isDir": true
+        },
+        {
+          "name": "icon.png",
+          "sizeK": 48,
+          "isDir": false
+        },
+        {
+          "name": "addon.xml",
+          "sizeK": 12,
+          "isDir": false
+        },
+        {
+          "name": "changelog.txt",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "inputstream.rtmp.so",
+          "sizeK": 0,
+          "isDir": false
+        },
+        {
+          "name": "inputstream.rtmp.so.22.0",
+          "sizeK": 0,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
+    },
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/pvr.iptvsimple": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/pvr.iptvsimple",
+      "totalK": 5172,
+      "children": [
+        {
+          "name": "resources",
+          "sizeK": 3488,
+          "isDir": true
+        },
+        {
+          "name": "pvr.iptvsimple.so.22.6.5",
+          "sizeK": 1556,
+          "isDir": false
+        },
+        {
+          "name": "icon.png",
+          "sizeK": 64,
+          "isDir": false
+        },
+        {
+          "name": "addon.xml",
+          "sizeK": 36,
+          "isDir": false
+        },
+        {
+          "name": "changelog.txt",
+          "sizeK": 24,
+          "isDir": false
+        },
+        {
+          "name": "pvr.iptvsimple.so",
+          "sizeK": 0,
+          "isDir": false
+        },
+        {
+          "name": "pvr.iptvsimple.so.22.0",
+          "sizeK": 0,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
+    },
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/resource.images.weathericons.default": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/resource.images.weathericons.default",
+      "totalK": 4760,
+      "children": [
+        {
+          "name": "resources",
+          "sizeK": 4676,
+          "isDir": true
+        },
+        {
+          "name": "icon.png",
+          "sizeK": 72,
+          "isDir": false
+        },
+        {
+          "name": "License.txt",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "addon.xml",
+          "sizeK": 4,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
+    },
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/inputstream.adaptive": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/inputstream.adaptive",
+      "totalK": 4704,
+      "children": [
+        {
+          "name": "inputstream.adaptive.so.22.3.22",
+          "sizeK": 2968,
+          "isDir": false
+        },
+        {
+          "name": "resources",
+          "sizeK": 1424,
+          "isDir": true
+        },
+        {
+          "name": "icon.png",
+          "sizeK": 152,
+          "isDir": false
+        },
+        {
+          "name": "fanart.jpg",
+          "sizeK": 104,
+          "isDir": false
+        },
+        {
+          "name": "changelog.txt",
+          "sizeK": 40,
+          "isDir": false
+        },
+        {
+          "name": "addon.xml",
+          "sizeK": 12,
+          "isDir": false
+        },
+        {
+          "name": "inputstream.adaptive.so",
+          "sizeK": 0,
+          "isDir": false
+        },
+        {
+          "name": "inputstream.adaptive.so.22.0",
+          "sizeK": 0,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
+    },
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/addons": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/addons",
+      "totalK": 31956,
+      "children": [
+        {
+          "name": "packages",
+          "sizeK": 9552,
+          "isDir": true
+        },
+        {
+          "name": "plugin.video.OnePlay.Matrix",
+          "sizeK": 7300,
+          "isDir": true
+        },
+        {
+          "name": "script.limpeza.Matrix",
+          "sizeK": 3456,
+          "isDir": true
+        },
+        {
+          "name": "script.module.chardet",
+          "sizeK": 2256,
+          "isDir": true
+        },
+        {
+          "name": "vkkodi.repo",
+          "sizeK": 1324,
+          "isDir": true
+        },
+        {
+          "name": "service.xbmc.versioncheck",
+          "sizeK": 1208,
+          "isDir": true
+        },
+        {
+          "name": "script.module.urllib3",
+          "sizeK": 988,
+          "isDir": true
+        },
+        {
+          "name": "plugin.video.BrazucaPlay",
+          "sizeK": 888,
+          "isDir": true
+        },
+        {
+          "name": "metadata.generic.albums",
+          "sizeK": 880,
+          "isDir": true
+        },
+        {
+          "name": "metadata.tvshows.themoviedb.org.python",
+          "sizeK": 832,
+          "isDir": true
+        },
+        {
+          "name": "metadata.generic.artists",
+          "sizeK": 812,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.pt_br",
+          "sizeK": 640,
+          "isDir": true
+        },
+        {
+          "name": "script.module.idna",
+          "sizeK": 520,
+          "isDir": true
+        },
+        {
+          "name": "script.module.requests",
+          "sizeK": 496,
+          "isDir": true
+        },
+        {
+          "name": "script.module.certifi",
+          "sizeK": 336,
+          "isDir": true
+        },
+        {
+          "name": "script.module.simplejson",
+          "sizeK": 224,
+          "isDir": true
+        },
+        {
+          "name": "script.module.kodi-six",
+          "sizeK": 124,
+          "isDir": true
+        },
+        {
+          "name": "script.module.six",
+          "sizeK": 112,
+          "isDir": true
+        },
+        {
+          "name": "temp",
+          "sizeK": 4,
+          "isDir": true
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
+    },
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/userdata": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/userdata",
+      "totalK": 25776,
+      "children": [
+        {
+          "name": "Thumbnails",
+          "sizeK": 21868,
+          "isDir": true
+        },
+        {
+          "name": "Database",
+          "sizeK": 2928,
+          "isDir": true
+        },
+        {
+          "name": "addon_data",
+          "sizeK": 880,
+          "isDir": true
+        },
+        {
+          "name": "guisettings.xml",
+          "sizeK": 36,
+          "isDir": false
+        },
+        {
+          "name": "playlists",
+          "sizeK": 16,
+          "isDir": true
+        },
+        {
+          "name": "peripheral_data",
+          "sizeK": 12,
+          "isDir": true
+        },
+        {
+          "name": "RssFeeds.xml",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "Savestates",
+          "sizeK": 4,
+          "isDir": true
+        },
+        {
+          "name": "advancedsettings.xml",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "favourites.xml",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "keymaps",
+          "sizeK": 4,
+          "isDir": true
+        },
+        {
+          "name": "library",
+          "sizeK": 4,
+          "isDir": true
+        },
+        {
+          "name": "profiles.xml",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "sources.xml",
+          "sizeK": 4,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
+    },
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/lib/python3.14": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/lib/python3.14",
+      "totalK": 46020,
+      "children": [
+        {
+          "name": "site-packages",
+          "sizeK": 25944,
+          "isDir": true
+        },
+        {
+          "name": "__pycache__",
+          "sizeK": 2564,
+          "isDir": true
+        },
+        {
+          "name": "ensurepip",
+          "sizeK": 1804,
+          "isDir": true
+        },
+        {
+          "name": "encodings",
+          "sizeK": 1780,
+          "isDir": true
+        },
+        {
+          "name": "idlelib",
+          "sizeK": 1308,
+          "isDir": true
+        },
+        {
+          "name": "email",
+          "sizeK": 704,
+          "isDir": true
+        },
+        {
+          "name": "xml",
+          "sizeK": 624,
+          "isDir": true
+        },
+        {
+          "name": "pydoc_data",
+          "sizeK": 600,
+          "isDir": true
+        },
+        {
+          "name": "asyncio",
+          "sizeK": 592,
+          "isDir": true
+        },
+        {
+          "name": "http",
+          "sizeK": 476,
+          "isDir": true
+        },
+        {
+          "name": "importlib",
+          "sizeK": 472,
+          "isDir": true
+        },
+        {
+          "name": "multiprocessing",
+          "sizeK": 360,
+          "isDir": true
+        },
+        {
+          "name": "tkinter",
+          "sizeK": 328,
+          "isDir": true
+        },
+        {
+          "name": "urllib",
+          "sizeK": 316,
+          "isDir": true
+        },
+        {
+          "name": "logging",
+          "sizeK": 296,
+          "isDir": true
+        },
+        {
+          "name": "unittest",
+          "sizeK": 292,
+          "isDir": true
+        },
+        {
+          "name": "_pyrepl",
+          "sizeK": 288,
+          "isDir": true
+        },
+        {
+          "name": "zipfile",
+          "sizeK": 272,
+          "isDir": true
+        },
+        {
+          "name": "_pydecimal.py",
+          "sizeK": 224,
+          "isDir": false
+        },
+        {
+          "name": "re",
+          "sizeK": 224,
+          "isDir": true
+        },
+        {
+          "name": "html",
+          "sizeK": 220,
+          "isDir": true
+        },
+        {
+          "name": "pathlib",
+          "sizeK": 184,
+          "isDir": true
+        },
+        {
+          "name": "turtle.py",
+          "sizeK": 148,
+          "isDir": false
+        },
+        {
+          "name": "collections",
+          "sizeK": 136,
+          "isDir": true
+        },
+        {
+          "name": "concurrent",
+          "sizeK": 136,
+          "isDir": true
+        },
+        {
+          "name": "typing.py",
+          "sizeK": 136,
+          "isDir": false
+        },
+        {
+          "name": "ctypes",
+          "sizeK": 132,
+          "isDir": true
+        },
+        {
+          "name": "json",
+          "sizeK": 132,
+          "isDir": true
+        },
+        {
+          "name": "pdb.py",
+          "sizeK": 132,
+          "isDir": false
+        },
+        {
+          "name": "inspect.py",
+          "sizeK": 128,
+          "isDir": false
+        },
+        {
+          "name": "turtledemo",
+          "sizeK": 120,
+          "isDir": true
+        },
+        {
+          "name": "tarfile.py",
+          "sizeK": 116,
+          "isDir": false
+        },
+        {
+          "name": "pydoc.py",
+          "sizeK": 112,
+          "isDir": false
+        },
+        {
+          "name": "argparse.py",
+          "sizeK": 108,
+          "isDir": false
+        },
+        {
+          "name": "doctest.py",
+          "sizeK": 108,
+          "isDir": false
+        },
+        {
+          "name": "compression",
+          "sizeK": 104,
+          "isDir": true
+        },
+        {
+          "name": "_pydatetime.py",
+          "sizeK": 96,
+          "isDir": false
+        },
+        {
+          "name": "_pyio.py",
+          "sizeK": 96,
+          "isDir": false
+        },
+        {
+          "name": "xmlrpc",
+          "sizeK": 96,
+          "isDir": true
+        },
+        {
+          "name": "pickletools.py",
+          "sizeK": 92,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 156,
+      "hiddenK": 4016,
+      "partial": false
+    },
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/media/Fonts": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/media/Fonts",
+      "totalK": 4644,
+      "children": [
+        {
+          "name": "arial.ttf",
+          "sizeK": 4536,
+          "isDir": false
+        },
+        {
+          "name": "teletext.ttf",
+          "sizeK": 104,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
+    },
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/webinterface.default/themes": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/webinterface.default/themes",
+      "totalK": 3932,
+      "children": [
+        {
+          "name": "base",
+          "sizeK": 3928,
+          "isDir": true
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
+    },
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/webinterface.default/screenshots": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/webinterface.default/screenshots",
+      "totalK": 1480,
+      "children": [
+        {
+          "name": "now-playing.jpg",
+          "sizeK": 228,
+          "isDir": false
+        },
+        {
+          "name": "tv.jpg",
+          "sizeK": 216,
+          "isDir": false
+        },
+        {
+          "name": "movie.jpg",
+          "sizeK": 172,
+          "isDir": false
+        },
+        {
+          "name": "artists.jpg",
+          "sizeK": 168,
+          "isDir": false
+        },
+        {
+          "name": "artist.jpg",
+          "sizeK": 160,
+          "isDir": false
+        },
+        {
+          "name": "search.jpg",
+          "sizeK": 160,
+          "isDir": false
+        },
+        {
+          "name": "edit-media.jpg",
+          "sizeK": 156,
+          "isDir": false
+        },
+        {
+          "name": "addons.jpg",
+          "sizeK": 128,
+          "isDir": false
+        },
+        {
+          "name": "settings.jpg",
+          "sizeK": 88,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
+    },
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/webinterface.default/lang": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/webinterface.default/lang",
+      "totalK": 1232,
+      "children": [
+        {
+          "name": "_strings",
+          "sizeK": 1064,
+          "isDir": true
+        },
+        {
+          "name": "en",
+          "sizeK": 60,
+          "isDir": true
+        },
+        {
+          "name": "pl",
+          "sizeK": 56,
+          "isDir": true
+        },
+        {
+          "name": "de",
+          "sizeK": 24,
+          "isDir": true
+        },
+        {
+          "name": "fr",
+          "sizeK": 16,
+          "isDir": true
+        },
+        {
+          "name": "nl",
+          "sizeK": 8,
+          "isDir": true
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
+    },
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/skin.estuary/language": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/skin.estuary/language",
+      "totalK": 1824,
+      "children": [
+        {
+          "name": "resource.language.ru_ru",
+          "sizeK": 32,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.th_th",
+          "sizeK": 32,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.uk_ua",
+          "sizeK": 32,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.ar_sa",
+          "sizeK": 28,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.be_by",
+          "sizeK": 28,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.bg_bg",
+          "sizeK": 28,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.bs_ba",
+          "sizeK": 28,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.ca_es",
+          "sizeK": 28,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.cs_cz",
+          "sizeK": 28,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.de_de",
+          "sizeK": 28,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.el_gr",
+          "sizeK": 28,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.es_es",
+          "sizeK": 28,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.es_mx",
+          "sizeK": 28,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.fr_fr",
+          "sizeK": 28,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.he_il",
+          "sizeK": 28,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.hu_hu",
+          "sizeK": 28,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.is_is",
+          "sizeK": 28,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.it_it",
+          "sizeK": 28,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.ja_jp",
+          "sizeK": 28,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.ko_kr",
+          "sizeK": 28,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.pl_pl",
+          "sizeK": 28,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.pt_br",
+          "sizeK": 28,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.sr_rs",
+          "sizeK": 28,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.vi_vn",
+          "sizeK": 28,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.af_za",
+          "sizeK": 24,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.da_dk",
+          "sizeK": 24,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.en_gb",
+          "sizeK": 24,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.en_nz",
+          "sizeK": 24,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.en_us",
+          "sizeK": 24,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.es_ar",
+          "sizeK": 24,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.et_ee",
+          "sizeK": 24,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.eu_es",
+          "sizeK": 24,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.fa_ir",
+          "sizeK": 24,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.fi_fi",
+          "sizeK": 24,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.fr_ca",
+          "sizeK": 24,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.gl_es",
+          "sizeK": 24,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.hr_hr",
+          "sizeK": 24,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.id_id",
+          "sizeK": 24,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.lt_lt",
+          "sizeK": 24,
+          "isDir": true
+        },
+        {
+          "name": "resource.language.mk_mk",
+          "sizeK": 24,
+          "isDir": true
+        }
+      ],
+      "hiddenCount": 35,
+      "hiddenK": 752,
+      "partial": false
+    },
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/skin.estuary/media": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/skin.estuary/media",
+      "totalK": 1448,
+      "children": [
+        {
+          "name": "Textures.xbt",
+          "sizeK": 768,
+          "isDir": false
+        },
+        {
+          "name": "curial.xbt",
+          "sizeK": 672,
+          "isDir": false
+        },
+        {
+          "name": "flat.xbt",
+          "sizeK": 4,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
+    },
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/skin.estuary/xml": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/skin.estuary/xml",
+      "totalK": 1368,
+      "children": [
+        {
+          "name": "Includes_InfoViewer.xml",
+          "sizeK": 88,
+          "isDir": false
+        },
+        {
+          "name": "Variables.xml",
+          "sizeK": 84,
+          "isDir": false
+        },
+        {
+          "name": "Includes.xml",
+          "sizeK": 68,
+          "isDir": false
+        },
+        {
+          "name": "Includes_Games.xml",
+          "sizeK": 68,
+          "isDir": false
+        },
+        {
+          "name": "Home.xml",
+          "sizeK": 60,
+          "isDir": false
+        },
+        {
+          "name": "Includes_DialogSelect.xml",
+          "sizeK": 40,
+          "isDir": false
+        },
+        {
+          "name": "Includes_Home.xml",
+          "sizeK": 40,
+          "isDir": false
+        },
+        {
+          "name": "DialogVideoInfo.xml",
+          "sizeK": 36,
+          "isDir": false
+        },
+        {
+          "name": "Includes_PVR.xml",
+          "sizeK": 32,
+          "isDir": false
+        },
+        {
+          "name": "DialogKeyboard.xml",
+          "sizeK": 28,
+          "isDir": false
+        },
+        {
+          "name": "Includes_SettingsDialog.xml",
+          "sizeK": 28,
+          "isDir": false
+        },
+        {
+          "name": "DialogMusicInfo.xml",
+          "sizeK": 24,
+          "isDir": false
+        },
+        {
+          "name": "SkinSettings.xml",
+          "sizeK": 24,
+          "isDir": false
+        },
+        {
+          "name": "DialogPVRInfo.xml",
+          "sizeK": 20,
+          "isDir": false
+        },
+        {
+          "name": "DialogPlayerProcessInfo.xml",
+          "sizeK": 20,
+          "isDir": false
+        },
+        {
+          "name": "Includes_MediaMenu.xml",
+          "sizeK": 20,
+          "isDir": false
+        },
+        {
+          "name": "View_54_InfoWall.xml",
+          "sizeK": 20,
+          "isDir": false
+        },
+        {
+          "name": "Custom_1100_AddonLauncher.xml",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "DialogAddonInfo.xml",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "DialogSeekBar.xml",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "Includes_Buttons.xml",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "MusicOSD.xml",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "VideoOSD.xml",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "View_50_List.xml",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "Custom_1109_TopBarOverlay.xml",
+          "sizeK": 12,
+          "isDir": false
+        },
+        {
+          "name": "Defaults.xml",
+          "sizeK": 12,
+          "isDir": false
+        },
+        {
+          "name": "DialogAddonSettings.xml",
+          "sizeK": 12,
+          "isDir": false
+        },
+        {
+          "name": "DialogPVRChannelManager.xml",
+          "sizeK": 12,
+          "isDir": false
+        },
+        {
+          "name": "DialogPVRRadioRDSInfo.xml",
+          "sizeK": 12,
+          "isDir": false
+        },
+        {
+          "name": "Includes_MusicInfo.xml",
+          "sizeK": 12,
+          "isDir": false
+        },
+        {
+          "name": "MyPVRGuide.xml",
+          "sizeK": 12,
+          "isDir": false
+        },
+        {
+          "name": "MyPics.xml",
+          "sizeK": 12,
+          "isDir": false
+        },
+        {
+          "name": "MyWeather.xml",
+          "sizeK": 12,
+          "isDir": false
+        },
+        {
+          "name": "SettingsSystemInfo.xml",
+          "sizeK": 12,
+          "isDir": false
+        },
+        {
+          "name": "View_53_Shift.xml",
+          "sizeK": 12,
+          "isDir": false
+        },
+        {
+          "name": "View_55_WideList.xml",
+          "sizeK": 12,
+          "isDir": false
+        },
+        {
+          "name": "DialogNumeric.xml",
+          "sizeK": 8,
+          "isDir": false
+        },
+        {
+          "name": "DialogPVRChannelGuide.xml",
+          "sizeK": 8,
+          "isDir": false
+        },
+        {
+          "name": "DialogPVRGroupManager.xml",
+          "sizeK": 8,
+          "isDir": false
+        },
+        {
+          "name": "DialogPVRGuideControls.xml",
+          "sizeK": 8,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 70,
+      "hiddenK": 376,
+      "partial": false
+    },
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/skin.estuary/resources": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/skin.estuary/resources",
+      "totalK": 1144,
+      "children": [
+        {
+          "name": "screenshot-01.jpg",
+          "sizeK": 168,
+          "isDir": false
+        },
+        {
+          "name": "screenshot-03.jpg",
+          "sizeK": 156,
+          "isDir": false
+        },
+        {
+          "name": "screenshot-04.jpg",
+          "sizeK": 152,
+          "isDir": false
+        },
+        {
+          "name": "screenshot-05.jpg",
+          "sizeK": 152,
+          "isDir": false
+        },
+        {
+          "name": "screenshot-07.jpg",
+          "sizeK": 128,
+          "isDir": false
+        },
+        {
+          "name": "screenshot-08.jpg",
+          "sizeK": 120,
+          "isDir": false
+        },
+        {
+          "name": "screenshot-06.jpg",
+          "sizeK": 92,
+          "isDir": false
+        },
+        {
+          "name": "screenshot-02.jpg",
+          "sizeK": 76,
+          "isDir": false
+        },
+        {
+          "name": "fanart.jpg",
+          "sizeK": 48,
+          "isDir": false
+        },
+        {
+          "name": "icon.png",
+          "sizeK": 48,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
+    },
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/pvr.zattoo/resources": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/pvr.zattoo/resources",
+      "totalK": 4016,
+      "children": [
+        {
+          "name": "media",
+          "sizeK": 3968,
+          "isDir": true
+        },
+        {
+          "name": "language",
+          "sizeK": 28,
+          "isDir": true
+        },
+        {
+          "name": "eit_categories.txt",
+          "sizeK": 8,
+          "isDir": false
+        },
+        {
+          "name": "settings.xml",
+          "sizeK": 8,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
+    },
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/pvr.iptvsimple/resources": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/pvr.iptvsimple/resources",
+      "totalK": 3488,
+      "children": [
+        {
+          "name": "language",
+          "sizeK": 3364,
+          "isDir": true
+        },
+        {
+          "name": "data",
+          "sizeK": 64,
+          "isDir": true
+        },
+        {
+          "name": "instance-settings.xml",
+          "sizeK": 40,
+          "isDir": false
+        },
+        {
+          "name": "settings.xml",
+          "sizeK": 16,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
+    },
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/resource.images.weathericons.default/resources": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/resource.images.weathericons.default/resources",
+      "totalK": 4676,
+      "children": [
+        {
+          "name": "13.png",
+          "sizeK": 128,
+          "isDir": false
+        },
+        {
+          "name": "41.png",
+          "sizeK": 128,
+          "isDir": false
+        },
+        {
+          "name": "43.png",
+          "sizeK": 128,
+          "isDir": false
+        },
+        {
+          "name": "5.png",
+          "sizeK": 124,
+          "isDir": false
+        },
+        {
+          "name": "6.png",
+          "sizeK": 124,
+          "isDir": false
+        },
+        {
+          "name": "7.png",
+          "sizeK": 124,
+          "isDir": false
+        },
+        {
+          "name": "38.png",
+          "sizeK": 120,
+          "isDir": false
+        },
+        {
+          "name": "1.png",
+          "sizeK": 116,
+          "isDir": false
+        },
+        {
+          "name": "10.png",
+          "sizeK": 116,
+          "isDir": false
+        },
+        {
+          "name": "12.png",
+          "sizeK": 116,
+          "isDir": false
+        },
+        {
+          "name": "16.png",
+          "sizeK": 116,
+          "isDir": false
+        },
+        {
+          "name": "17.png",
+          "sizeK": 116,
+          "isDir": false
+        },
+        {
+          "name": "3.png",
+          "sizeK": 116,
+          "isDir": false
+        },
+        {
+          "name": "35.png",
+          "sizeK": 116,
+          "isDir": false
+        },
+        {
+          "name": "4.png",
+          "sizeK": 116,
+          "isDir": false
+        },
+        {
+          "name": "42.png",
+          "sizeK": 116,
+          "isDir": false
+        },
+        {
+          "name": "8.png",
+          "sizeK": 116,
+          "isDir": false
+        },
+        {
+          "name": "18.png",
+          "sizeK": 112,
+          "isDir": false
+        },
+        {
+          "name": "40.png",
+          "sizeK": 112,
+          "isDir": false
+        },
+        {
+          "name": "15.png",
+          "sizeK": 108,
+          "isDir": false
+        },
+        {
+          "name": "46.png",
+          "sizeK": 108,
+          "isDir": false
+        },
+        {
+          "name": "11.png",
+          "sizeK": 100,
+          "isDir": false
+        },
+        {
+          "name": "14.png",
+          "sizeK": 100,
+          "isDir": false
+        },
+        {
+          "name": "39.png",
+          "sizeK": 100,
+          "isDir": false
+        },
+        {
+          "name": "47.png",
+          "sizeK": 100,
+          "isDir": false
+        },
+        {
+          "name": "9.png",
+          "sizeK": 100,
+          "isDir": false
+        },
+        {
+          "name": "23.png",
+          "sizeK": 96,
+          "isDir": false
+        },
+        {
+          "name": "24.png",
+          "sizeK": 96,
+          "isDir": false
+        },
+        {
+          "name": "20.png",
+          "sizeK": 88,
+          "isDir": false
+        },
+        {
+          "name": "28.png",
+          "sizeK": 88,
+          "isDir": false
+        },
+        {
+          "name": "45.png",
+          "sizeK": 88,
+          "isDir": false
+        },
+        {
+          "name": "19.png",
+          "sizeK": 84,
+          "isDir": false
+        },
+        {
+          "name": "0.png",
+          "sizeK": 80,
+          "isDir": false
+        },
+        {
+          "name": "2.png",
+          "sizeK": 80,
+          "isDir": false
+        },
+        {
+          "name": "25.png",
+          "sizeK": 80,
+          "isDir": false
+        },
+        {
+          "name": "32.png",
+          "sizeK": 80,
+          "isDir": false
+        },
+        {
+          "name": "36.png",
+          "sizeK": 80,
+          "isDir": false
+        },
+        {
+          "name": "26.png",
+          "sizeK": 76,
+          "isDir": false
+        },
+        {
+          "name": "30.png",
+          "sizeK": 76,
+          "isDir": false
+        },
+        {
+          "name": "37.png",
+          "sizeK": 76,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 10,
+      "hiddenK": 528,
+      "partial": false
+    },
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/inputstream.adaptive/resources": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/inputstream.adaptive/resources",
+      "totalK": 1424,
+      "children": [
+        {
+          "name": "language",
+          "sizeK": 1404,
+          "isDir": true
+        },
+        {
+          "name": "settings.xml",
+          "sizeK": 16,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
+    },
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/addons/packages": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/addons/packages",
+      "totalK": 9552,
+      "children": [
+        {
+          "name": "plugin.video.faustinotv-3.1.1.zip",
+          "sizeK": 5080,
+          "isDir": false
+        },
+        {
+          "name": "plugin.video.OnePlay.Matrix-3.4.8.zip",
+          "sizeK": 4468,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
+    },
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/addons/plugin.video.OnePlay.Matrix": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/addons/plugin.video.OnePlay.Matrix",
+      "totalK": 7300,
+      "children": [
+        {
+          "name": "resources",
+          "sizeK": 6508,
+          "isDir": true
+        },
+        {
+          "name": "fanart.jpg",
+          "sizeK": 388,
+          "isDir": false
+        },
+        {
+          "name": "icon.png",
+          "sizeK": 276,
+          "isDir": false
+        },
+        {
+          "name": "default.py",
+          "sizeK": 72,
+          "isDir": false
+        },
+        {
+          "name": "service.py",
+          "sizeK": 48,
+          "isDir": false
+        },
+        {
+          "name": "addon.xml",
+          "sizeK": 4,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
+    },
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/addons/script.limpeza.Matrix": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/addons/script.limpeza.Matrix",
+      "totalK": 3456,
+      "children": [
+        {
+          "name": "media",
+          "sizeK": 2272,
+          "isDir": true
+        },
+        {
+          "name": "fanart.jpg",
+          "sizeK": 696,
+          "isDir": false
+        },
+        {
+          "name": "icon.png",
+          "sizeK": 208,
+          "isDir": false
+        },
+        {
+          "name": "__pycache__",
+          "sizeK": 100,
+          "isDir": true
+        },
+        {
+          "name": "default.py",
+          "sizeK": 80,
+          "isDir": false
+        },
+        {
+          "name": "resources",
+          "sizeK": 60,
+          "isDir": true
+        },
+        {
+          "name": "LICENSE.txt",
+          "sizeK": 20,
+          "isDir": false
+        },
+        {
+          "name": "service.py",
+          "sizeK": 12,
+          "isDir": false
+        },
+        {
+          "name": "addon.xml",
+          "sizeK": 4,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
+    },
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/addons/script.module.chardet": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/addons/script.module.chardet",
+      "totalK": 2256,
+      "children": [
+        {
+          "name": "lib",
+          "sizeK": 2208,
+          "isDir": true
+        },
+        {
+          "name": "LICENSE.txt",
+          "sizeK": 28,
+          "isDir": false
+        },
+        {
+          "name": "resources",
+          "sizeK": 12,
+          "isDir": true
+        },
+        {
+          "name": "addon.xml",
+          "sizeK": 4,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
+    },
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/addons/vkkodi.repo": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/addons/vkkodi.repo",
+      "totalK": 1324,
+      "children": [
+        {
+          "name": "fanart.jpg",
+          "sizeK": 848,
+          "isDir": false
+        },
+        {
+          "name": "icon.png",
+          "sizeK": 468,
+          "isDir": false
+        },
+        {
+          "name": "addon.xml",
+          "sizeK": 4,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
+    },
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/addons/service.xbmc.versioncheck": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/addons/service.xbmc.versioncheck",
+      "totalK": 1208,
+      "children": [
+        {
+          "name": "resources",
+          "sizeK": 1096,
+          "isDir": true
+        },
+        {
+          "name": "LICENSES",
+          "sizeK": 68,
+          "isDir": true
+        },
+        {
+          "name": "addon.xml",
+          "sizeK": 24,
+          "isDir": false
+        },
+        {
+          "name": "icon.png",
+          "sizeK": 16,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
+    },
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/userdata/Thumbnails": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/userdata/Thumbnails",
+      "totalK": 21868,
+      "children": [
+        {
+          "name": "9",
+          "sizeK": 3416,
+          "isDir": true
+        },
+        {
+          "name": "c",
+          "sizeK": 2012,
+          "isDir": true
+        },
+        {
+          "name": "d",
+          "sizeK": 1820,
+          "isDir": true
+        },
+        {
+          "name": "e",
+          "sizeK": 1640,
+          "isDir": true
+        },
+        {
+          "name": "f",
+          "sizeK": 1584,
+          "isDir": true
+        },
+        {
+          "name": "2",
+          "sizeK": 1400,
+          "isDir": true
+        },
+        {
+          "name": "b",
+          "sizeK": 1320,
+          "isDir": true
+        },
+        {
+          "name": "8",
+          "sizeK": 1240,
+          "isDir": true
+        },
+        {
+          "name": "6",
+          "sizeK": 1188,
+          "isDir": true
+        },
+        {
+          "name": "7",
+          "sizeK": 1116,
+          "isDir": true
+        },
+        {
+          "name": "1",
+          "sizeK": 1104,
+          "isDir": true
+        },
+        {
+          "name": "5",
+          "sizeK": 936,
+          "isDir": true
+        },
+        {
+          "name": "3",
+          "sizeK": 820,
+          "isDir": true
+        },
+        {
+          "name": "4",
+          "sizeK": 764,
+          "isDir": true
+        },
+        {
+          "name": "0",
+          "sizeK": 756,
+          "isDir": true
+        },
+        {
+          "name": "a",
+          "sizeK": 740,
+          "isDir": true
+        },
+        {
+          "name": "Video",
+          "sizeK": 8,
+          "isDir": true
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
+    },
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/userdata/Database": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/userdata/Database",
+      "totalK": 2928,
+      "children": [
+        {
+          "name": "Addons33.db",
+          "sizeK": 1568,
+          "isDir": false
+        },
+        {
+          "name": "Textures14.db",
+          "sizeK": 584,
+          "isDir": false
+        },
+        {
+          "name": "MyVideos149.db",
+          "sizeK": 412,
+          "isDir": false
+        },
+        {
+          "name": "MyMusic84.db",
+          "sizeK": 220,
+          "isDir": false
+        },
+        {
+          "name": "TV48.db",
+          "sizeK": 52,
+          "isDir": false
+        },
+        {
+          "name": "ViewModes6.db",
+          "sizeK": 36,
+          "isDir": false
+        },
+        {
+          "name": "Epg22.db",
+          "sizeK": 32,
+          "isDir": false
+        },
+        {
+          "name": "Games1.db",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "CDDB",
+          "sizeK": 4,
+          "isDir": true
+        },
+        {
+          "name": "Textures13.db",
+          "sizeK": 0,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
+    },
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/lib/python3.14/site-packages": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/lib/python3.14/site-packages",
+      "totalK": 25944,
+      "children": [
+        {
+          "name": "setuptools",
+          "sizeK": 10464,
+          "isDir": true
+        },
+        {
+          "name": "Cryptodome",
+          "sizeK": 9852,
+          "isDir": true
+        },
+        {
+          "name": "PIL",
+          "sizeK": 4640,
+          "isDir": true
+        },
+        {
+          "name": "pkg_resources",
+          "sizeK": 604,
+          "isDir": true
+        },
+        {
+          "name": "setuptools-80.9.0.dist-info",
+          "sizeK": 116,
+          "isDir": true
+        },
+        {
+          "name": "EGG-INFO",
+          "sizeK": 92,
+          "isDir": true
+        },
+        {
+          "name": "pillow-12.0.0-py3.14.egg-info",
+          "sizeK": 88,
+          "isDir": true
+        },
+        {
+          "name": "pycryptodomex-3.23.0-py3.14.egg-info",
+          "sizeK": 40,
+          "isDir": true
+        },
+        {
+          "name": "_distutils_hack",
+          "sizeK": 36,
+          "isDir": true
+        },
+        {
+          "name": "README.txt",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "distutils-precedence.pth",
+          "sizeK": 4,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
+    },
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/lib/python3.14/__pycache__": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/lib/python3.14/__pycache__",
+      "totalK": 2564,
+      "children": [
+        {
+          "name": "_pydecimal.cpython-314.opt-1.pyc",
+          "sizeK": 224,
+          "isDir": false
+        },
+        {
+          "name": "typing.cpython-314.opt-1.pyc",
+          "sizeK": 168,
+          "isDir": false
+        },
+        {
+          "name": "inspect.cpython-314.opt-1.pyc",
+          "sizeK": 136,
+          "isDir": false
+        },
+        {
+          "name": "argparse.cpython-314.opt-1.pyc",
+          "sizeK": 112,
+          "isDir": false
+        },
+        {
+          "name": "ipaddress.cpython-314.opt-1.pyc",
+          "sizeK": 92,
+          "isDir": false
+        },
+        {
+          "name": "enum.cpython-314.opt-1.pyc",
+          "sizeK": 88,
+          "isDir": false
+        },
+        {
+          "name": "pickle.cpython-314.opt-1.pyc",
+          "sizeK": 84,
+          "isDir": false
+        },
+        {
+          "name": "subprocess.cpython-314.opt-1.pyc",
+          "sizeK": 84,
+          "isDir": false
+        },
+        {
+          "name": "traceback.cpython-314.opt-1.pyc",
+          "sizeK": 80,
+          "isDir": false
+        },
+        {
+          "name": "shutil.cpython-314.opt-1.pyc",
+          "sizeK": 72,
+          "isDir": false
+        },
+        {
+          "name": "locale.cpython-314.opt-1.pyc",
+          "sizeK": 68,
+          "isDir": false
+        },
+        {
+          "name": "ssl.cpython-314.opt-1.pyc",
+          "sizeK": 68,
+          "isDir": false
+        },
+        {
+          "name": "threading.cpython-314.opt-1.pyc",
+          "sizeK": 68,
+          "isDir": false
+        },
+        {
+          "name": "dataclasses.cpython-314.opt-1.pyc",
+          "sizeK": 56,
+          "isDir": false
+        },
+        {
+          "name": "dis.cpython-314.opt-1.pyc",
+          "sizeK": 56,
+          "isDir": false
+        },
+        {
+          "name": "annotationlib.cpython-314.opt-1.pyc",
+          "sizeK": 52,
+          "isDir": false
+        },
+        {
+          "name": "calendar.cpython-314.opt-1.pyc",
+          "sizeK": 48,
+          "isDir": false
+        },
+        {
+          "name": "functools.cpython-314.opt-1.pyc",
+          "sizeK": 48,
+          "isDir": false
+        },
+        {
+          "name": "platform.cpython-314.opt-1.pyc",
+          "sizeK": 48,
+          "isDir": false
+        },
+        {
+          "name": "socket.cpython-314.opt-1.pyc",
+          "sizeK": 44,
+          "isDir": false
+        },
+        {
+          "name": "tempfile.cpython-314.opt-1.pyc",
+          "sizeK": 44,
+          "isDir": false
+        },
+        {
+          "name": "_py_warnings.cpython-314.opt-1.pyc",
+          "sizeK": 40,
+          "isDir": false
+        },
+        {
+          "name": "random.cpython-314.opt-1.pyc",
+          "sizeK": 40,
+          "isDir": false
+        },
+        {
+          "name": "gzip.cpython-314.opt-1.pyc",
+          "sizeK": 36,
+          "isDir": false
+        },
+        {
+          "name": "socketserver.cpython-314.opt-1.pyc",
+          "sizeK": 36,
+          "isDir": false
+        },
+        {
+          "name": "ast.cpython-314.opt-1.pyc",
+          "sizeK": 32,
+          "isDir": false
+        },
+        {
+          "name": "contextlib.cpython-314.opt-1.pyc",
+          "sizeK": 32,
+          "isDir": false
+        },
+        {
+          "name": "mimetypes.cpython-314.opt-1.pyc",
+          "sizeK": 32,
+          "isDir": false
+        },
+        {
+          "name": "base64.cpython-314.opt-1.pyc",
+          "sizeK": 28,
+          "isDir": false
+        },
+        {
+          "name": "glob.cpython-314.opt-1.pyc",
+          "sizeK": 28,
+          "isDir": false
+        },
+        {
+          "name": "selectors.cpython-314.opt-1.pyc",
+          "sizeK": 28,
+          "isDir": false
+        },
+        {
+          "name": "stringprep.cpython-314.opt-1.pyc",
+          "sizeK": 28,
+          "isDir": false
+        },
+        {
+          "name": "tokenize.cpython-314.opt-1.pyc",
+          "sizeK": 28,
+          "isDir": false
+        },
+        {
+          "name": "weakref.cpython-314.opt-1.pyc",
+          "sizeK": 28,
+          "isDir": false
+        },
+        {
+          "name": "gettext.cpython-314.opt-1.pyc",
+          "sizeK": 24,
+          "isDir": false
+        },
+        {
+          "name": "_colorize.cpython-314.opt-1.pyc",
+          "sizeK": 20,
+          "isDir": false
+        },
+        {
+          "name": "heapq.cpython-314.opt-1.pyc",
+          "sizeK": 20,
+          "isDir": false
+        },
+        {
+          "name": "lzma.cpython-314.opt-1.pyc",
+          "sizeK": 20,
+          "isDir": false
+        },
+        {
+          "name": "operator.cpython-314.opt-1.pyc",
+          "sizeK": 20,
+          "isDir": false
+        },
+        {
+          "name": "queue.cpython-314.opt-1.pyc",
+          "sizeK": 20,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 29,
+      "hiddenK": 280,
+      "partial": false
+    },
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/lib/python3.14/ensurepip": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/lib/python3.14/ensurepip",
+      "totalK": 1804,
+      "children": [
+        {
+          "name": "_bundled",
+          "sizeK": 1776,
+          "isDir": true
+        },
+        {
+          "name": "__init__.py",
+          "sizeK": 12,
+          "isDir": false
+        },
+        {
+          "name": "__main__.py",
+          "sizeK": 4,
+          "isDir": false
+        },
+        {
+          "name": "__pycache__",
+          "sizeK": 4,
+          "isDir": true
+        },
+        {
+          "name": "_uninstall.py",
+          "sizeK": 4,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 0,
+      "hiddenK": 0,
+      "partial": false
+    },
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/lib/python3.14/encodings": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/lib/python3.14/encodings",
+      "totalK": 1780,
+      "children": [
+        {
+          "name": "__pycache__",
+          "sizeK": 52,
+          "isDir": true
+        },
+        {
+          "name": "cp1125.py",
+          "sizeK": 36,
+          "isDir": false
+        },
+        {
+          "name": "cp437.py",
+          "sizeK": 36,
+          "isDir": false
+        },
+        {
+          "name": "cp737.py",
+          "sizeK": 36,
+          "isDir": false
+        },
+        {
+          "name": "cp775.py",
+          "sizeK": 36,
+          "isDir": false
+        },
+        {
+          "name": "cp850.py",
+          "sizeK": 36,
+          "isDir": false
+        },
+        {
+          "name": "cp852.py",
+          "sizeK": 36,
+          "isDir": false
+        },
+        {
+          "name": "cp855.py",
+          "sizeK": 36,
+          "isDir": false
+        },
+        {
+          "name": "cp857.py",
+          "sizeK": 36,
+          "isDir": false
+        },
+        {
+          "name": "cp858.py",
+          "sizeK": 36,
+          "isDir": false
+        },
+        {
+          "name": "cp860.py",
+          "sizeK": 36,
+          "isDir": false
+        },
+        {
+          "name": "cp861.py",
+          "sizeK": 36,
+          "isDir": false
+        },
+        {
+          "name": "cp862.py",
+          "sizeK": 36,
+          "isDir": false
+        },
+        {
+          "name": "cp863.py",
+          "sizeK": 36,
+          "isDir": false
+        },
+        {
+          "name": "cp864.py",
+          "sizeK": 36,
+          "isDir": false
+        },
+        {
+          "name": "cp865.py",
+          "sizeK": 36,
+          "isDir": false
+        },
+        {
+          "name": "cp866.py",
+          "sizeK": 36,
+          "isDir": false
+        },
+        {
+          "name": "cp869.py",
+          "sizeK": 36,
+          "isDir": false
+        },
+        {
+          "name": "mac_arabic.py",
+          "sizeK": 36,
+          "isDir": false
+        },
+        {
+          "name": "aliases.py",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "cp037.py",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "cp1006.py",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "cp1026.py",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "cp1140.py",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "cp1250.py",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "cp1251.py",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "cp1252.py",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "cp1253.py",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "cp1254.py",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "cp1255.py",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "cp1256.py",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "cp1257.py",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "cp1258.py",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "cp273.py",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "cp500.py",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "cp720.py",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "cp856.py",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "cp874.py",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "cp875.py",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "hp_roman8.py",
+          "sizeK": 16,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 84,
+      "hiddenK": 740,
+      "partial": false
+    },
+    "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/lib/python3.14/idlelib": {
+      "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/lib/python3.14/idlelib",
+      "totalK": 1308,
+      "children": [
+        {
+          "name": "Icons",
+          "sizeK": 148,
+          "isDir": true
+        },
+        {
+          "name": "configdialog.py",
+          "sizeK": 104,
+          "isDir": false
+        },
+        {
+          "name": "editor.py",
+          "sizeK": 68,
+          "isDir": false
+        },
+        {
+          "name": "help.html",
+          "sizeK": 64,
+          "isDir": false
+        },
+        {
+          "name": "pyshell.py",
+          "sizeK": 64,
+          "isDir": false
+        },
+        {
+          "name": "ChangeLog",
+          "sizeK": 56,
+          "isDir": false
+        },
+        {
+          "name": "News3.txt",
+          "sizeK": 56,
+          "isDir": false
+        },
+        {
+          "name": "config.py",
+          "sizeK": 40,
+          "isDir": false
+        },
+        {
+          "name": "NEWS2x.txt",
+          "sizeK": 28,
+          "isDir": false
+        },
+        {
+          "name": "autocomplete_w.py",
+          "sizeK": 24,
+          "isDir": false
+        },
+        {
+          "name": "debugger.py",
+          "sizeK": 24,
+          "isDir": false
+        },
+        {
+          "name": "rpc.py",
+          "sizeK": 24,
+          "isDir": false
+        },
+        {
+          "name": "run.py",
+          "sizeK": 24,
+          "isDir": false
+        },
+        {
+          "name": "iomenu.py",
+          "sizeK": 20,
+          "isDir": false
+        },
+        {
+          "name": "multicall.py",
+          "sizeK": 20,
+          "isDir": false
+        },
+        {
+          "name": "pyparse.py",
+          "sizeK": 20,
+          "isDir": false
+        },
+        {
+          "name": "sidebar.py",
+          "sizeK": 20,
+          "isDir": false
+        },
+        {
+          "name": "tree.py",
+          "sizeK": 20,
+          "isDir": false
+        },
+        {
+          "name": "colorizer.py",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "config_key.py",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "format.py",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "help.py",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "hyperparser.py",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "query.py",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "squeezer.py",
+          "sizeK": 16,
+          "isDir": false
+        },
+        {
+          "name": "HISTORY.txt",
+          "sizeK": 12,
+          "isDir": false
+        },
+        {
+          "name": "README.txt",
+          "sizeK": 12,
+          "isDir": false
+        },
+        {
+          "name": "TODO.txt",
+          "sizeK": 12,
+          "isDir": false
+        },
+        {
+          "name": "autocomplete.py",
+          "sizeK": 12,
+          "isDir": false
+        },
+        {
+          "name": "browser.py",
+          "sizeK": 12,
+          "isDir": false
+        },
+        {
+          "name": "codecontext.py",
+          "sizeK": 12,
+          "isDir": false
+        },
+        {
+          "name": "config-keys.def",
+          "sizeK": 12,
+          "isDir": false
+        },
+        {
+          "name": "debugger_r.py",
+          "sizeK": 12,
+          "isDir": false
+        },
+        {
+          "name": "help_about.py",
+          "sizeK": 12,
+          "isDir": false
+        },
+        {
+          "name": "macosx.py",
+          "sizeK": 12,
+          "isDir": false
+        },
+        {
+          "name": "replace.py",
+          "sizeK": 12,
+          "isDir": false
+        },
+        {
+          "name": "runscript.py",
+          "sizeK": 12,
+          "isDir": false
+        },
+        {
+          "name": "undo.py",
+          "sizeK": 12,
+          "isDir": false
+        },
+        {
+          "name": "calltip.py",
+          "sizeK": 8,
+          "isDir": false
+        },
+        {
+          "name": "calltip_w.py",
+          "sizeK": 8,
+          "isDir": false
+        }
+      ],
+      "hiddenCount": 37,
+      "hiddenK": 196,
+      "partial": false
     }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
   },
-  "/media/developer/apps/usr/palm/applications/com.pirate.refresh": {
-   "path": "/media/developer/apps/usr/palm/applications/com.pirate.refresh",
-   "totalK": 188,
-   "children": [
-    {
-     "name": "icon.png",
-     "sizeK": 44,
-     "isDir": false
-    },
-    {
-     "name": "largeIcon.png",
-     "sizeK": 44,
-     "isDir": false
-    },
-    {
-     "name": "webOSTVjs-1.2.11",
-     "sizeK": 32,
-     "isDir": true
-    },
-    {
-     "name": "webOSjs-0.1.0",
-     "sizeK": 28,
-     "isDir": true
-    },
-    {
-     "name": "app.js",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "alert.css",
-     "sizeK": 4,
-     "isDir": false
-    },
-    {
-     "name": "appinfo.json",
-     "sizeK": 4,
-     "isDir": false
-    },
-    {
-     "name": "http.js",
-     "sizeK": 4,
-     "isDir": false
-    },
-    {
-     "name": "index.html",
-     "sizeK": 4,
-     "isDir": false
-    },
-    {
-     "name": "native-alerts.js",
-     "sizeK": 4,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/services/com.pirate.refresh.service": {
-   "path": "/media/developer/apps/usr/palm/services/com.pirate.refresh.service",
-   "totalK": 16,
-   "children": [
-    {
-     "name": "helloworld_service.js",
-     "sizeK": 4,
-     "isDir": false
-    },
-    {
-     "name": "package.json",
-     "sizeK": 4,
-     "isDir": false
-    },
-    {
-     "name": "services.json",
-     "sizeK": 4,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons",
-   "totalK": 134996,
-   "children": [
-    {
-     "name": "inputstream.ffmpegdirect",
-     "sizeK": 22456,
-     "isDir": true
-    },
-    {
-     "name": "webinterface.default",
-     "sizeK": 9192,
-     "isDir": true
-    },
-    {
-     "name": "skin.estuary",
-     "sizeK": 8404,
-     "isDir": true
-    },
-    {
-     "name": "pvr.zattoo",
-     "sizeK": 6272,
-     "isDir": true
-    },
-    {
-     "name": "inputstream.rtmp",
-     "sizeK": 5548,
-     "isDir": true
-    },
-    {
-     "name": "pvr.iptvsimple",
-     "sizeK": 5172,
-     "isDir": true
-    },
-    {
-     "name": "resource.images.weathericons.default",
-     "sizeK": 4760,
-     "isDir": true
-    },
-    {
-     "name": "inputstream.adaptive",
-     "sizeK": 4704,
-     "isDir": true
-    },
-    {
-     "name": "pvr.freebox",
-     "sizeK": 4368,
-     "isDir": true
-    },
-    {
-     "name": "pvr.mythtv",
-     "sizeK": 3648,
-     "isDir": true
-    },
-    {
-     "name": "pvr.stalker",
-     "sizeK": 2992,
-     "isDir": true
-    },
-    {
-     "name": "pvr.waipu",
-     "sizeK": 2976,
-     "isDir": true
-    },
-    {
-     "name": "peripheral.joystick",
-     "sizeK": 2940,
-     "isDir": true
-    },
-    {
-     "name": "pvr.mediaportal.tvserver",
-     "sizeK": 2776,
-     "isDir": true
-    },
-    {
-     "name": "pvr.hts",
-     "sizeK": 2736,
-     "isDir": true
-    },
-    {
-     "name": "pvr.dvblink",
-     "sizeK": 2556,
-     "isDir": true
-    },
-    {
-     "name": "pvr.plutotv",
-     "sizeK": 2556,
-     "isDir": true
-    },
-    {
-     "name": "pvr.teleboy",
-     "sizeK": 2348,
-     "isDir": true
-    },
-    {
-     "name": "pvr.vdr.vnsi",
-     "sizeK": 2268,
-     "isDir": true
-    },
-    {
-     "name": "pvr.vbox",
-     "sizeK": 2248,
-     "isDir": true
-    },
-    {
-     "name": "pvr.nextpvr",
-     "sizeK": 2176,
-     "isDir": true
-    },
-    {
-     "name": "pvr.argustv",
-     "sizeK": 1960,
-     "isDir": true
-    },
-    {
-     "name": "pvr.filmon",
-     "sizeK": 1952,
-     "isDir": true
-    },
-    {
-     "name": "pvr.hdhomerun",
-     "sizeK": 1920,
-     "isDir": true
-    },
-    {
-     "name": "pvr.pctv",
-     "sizeK": 1904,
-     "isDir": true
-    },
-    {
-     "name": "pvr.octonet",
-     "sizeK": 1796,
-     "isDir": true
-    },
-    {
-     "name": "pvr.dvbviewer",
-     "sizeK": 1768,
-     "isDir": true
-    },
-    {
-     "name": "pvr.njoy",
-     "sizeK": 1708,
-     "isDir": true
-    },
-    {
-     "name": "game.controller.keyboard",
-     "sizeK": 1624,
-     "isDir": true
-    },
-    {
-     "name": "pvr.wmc",
-     "sizeK": 1384,
-     "isDir": true
-    },
-    {
-     "name": "pvr.sledovanitv.cz",
-     "sizeK": 1356,
-     "isDir": true
-    },
-    {
-     "name": "pvr.demo",
-     "sizeK": 1320,
-     "isDir": true
-    },
-    {
-     "name": "service.xbmc.versioncheck",
-     "sizeK": 1212,
-     "isDir": true
-    },
-    {
-     "name": "game.controller.default",
-     "sizeK": 1192,
-     "isDir": true
-    },
-    {
-     "name": "game.controller.mouse",
-     "sizeK": 1044,
-     "isDir": true
-    },
-    {
-     "name": "game.controller.snes",
-     "sizeK": 1004,
-     "isDir": true
-    },
-    {
-     "name": "metadata.artists.universal",
-     "sizeK": 900,
-     "isDir": true
-    },
-    {
-     "name": "metadata.generic.albums",
-     "sizeK": 880,
-     "isDir": true
-    },
-    {
-     "name": "metadata.tvshows.themoviedb.org.python",
-     "sizeK": 832,
-     "isDir": true
-    },
-    {
-     "name": "metadata.themoviedb.org.python",
-     "sizeK": 828,
-     "isDir": true
-    }
-   ],
-   "hiddenCount": 45,
-   "hiddenK": 5312,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi",
-   "totalK": 58224,
-   "children": [
-    {
-     "name": "addons",
-     "sizeK": 31956,
-     "isDir": true
-    },
-    {
-     "name": "userdata",
-     "sizeK": 25776,
-     "isDir": true
-    },
-    {
-     "name": "temp",
-     "sizeK": 480,
-     "isDir": true
-    },
-    {
-     "name": "media",
-     "sizeK": 4,
-     "isDir": true
-    },
-    {
-     "name": "system",
-     "sizeK": 4,
-     "isDir": true
-    }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/lib": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/lib",
-   "totalK": 46504,
-   "children": [
-    {
-     "name": "python3.14",
-     "sizeK": 46020,
-     "isDir": true
-    },
-    {
-     "name": "libshairplay.so.0.0.0",
-     "sizeK": 196,
-     "isDir": false
-    },
-    {
-     "name": "gst-plugin-scanner",
-     "sizeK": 72,
-     "isDir": false
-    },
-    {
-     "name": "libatomic.so.1.2.0",
-     "sizeK": 68,
-     "isDir": false
-    },
-    {
-     "name": "libcrypt-2.12.2.so",
-     "sizeK": 68,
-     "isDir": false
-    },
-    {
-     "name": "libdrm.so.2.134.0",
-     "sizeK": 68,
-     "isDir": false
-    },
-    {
-     "name": "libAcbAPI.so.1.0.0",
-     "sizeK": 8,
-     "isDir": false
-    },
-    {
-     "name": "libAcbAPI.so.1",
-     "sizeK": 0,
-     "isDir": false
-    },
-    {
-     "name": "libatomic.so.1",
-     "sizeK": 0,
-     "isDir": false
-    },
-    {
-     "name": "libcrypt.so.1",
-     "sizeK": 0,
-     "isDir": false
-    },
-    {
-     "name": "libdrm.so.2",
-     "sizeK": 0,
-     "isDir": false
-    },
-    {
-     "name": "libshairplay.so.0",
-     "sizeK": 0,
-     "isDir": false
-    },
-    {
-     "name": "python3",
-     "sizeK": 0,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/media": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/media",
-   "totalK": 5828,
-   "children": [
-    {
-     "name": "Fonts",
-     "sizeK": 4644,
-     "isDir": true
-    },
-    {
-     "name": "qr",
-     "sizeK": 712,
-     "isDir": true
-    },
-    {
-     "name": "splash.jpg",
-     "sizeK": 380,
-     "isDir": false
-    },
-    {
-     "name": "icon256x256.png",
-     "sizeK": 24,
-     "isDir": false
-    },
-    {
-     "name": "applaunch_screen.png",
-     "sizeK": 12,
-     "isDir": false
-    },
-    {
-     "name": "banner.png",
-     "sizeK": 12,
-     "isDir": false
-    },
-    {
-     "name": "vendor_logo.png",
-     "sizeK": 12,
-     "isDir": false
-    },
-    {
-     "name": "icon120x120.png",
-     "sizeK": 8,
-     "isDir": false
-    },
-    {
-     "name": "icon16x16.png",
-     "sizeK": 4,
-     "isDir": false
-    },
-    {
-     "name": "icon32x32.png",
-     "sizeK": 4,
-     "isDir": false
-    },
-    {
-     "name": "icon48x48.png",
-     "sizeK": 4,
-     "isDir": false
-    },
-    {
-     "name": "icon80x80.png",
-     "sizeK": 4,
-     "isDir": false
-    },
-    {
-     "name": "vendor_icon.png",
-     "sizeK": 4,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/system": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/system",
-   "totalK": 2556,
-   "children": [
-    {
-     "name": "language-subtag-registry.txt",
-     "sizeK": 716,
-     "isDir": false
-    },
-    {
-     "name": "shaders",
-     "sizeK": 428,
-     "isDir": true
-    },
-    {
-     "name": "library",
-     "sizeK": 368,
-     "isDir": true
-    },
-    {
-     "name": "settings",
-     "sizeK": 248,
-     "isDir": true
-    },
-    {
-     "name": "certs",
-     "sizeK": 228,
-     "isDir": true
-    },
-    {
-     "name": "keymaps",
-     "sizeK": 200,
-     "isDir": true
-    },
-    {
-     "name": "players",
-     "sizeK": 184,
-     "isDir": true
-    },
-    {
-     "name": "keyboardlayouts",
-     "sizeK": 128,
-     "isDir": true
-    },
-    {
-     "name": "Lircmap.xml",
-     "sizeK": 20,
-     "isDir": false
-    },
-    {
-     "name": "colors.xml",
-     "sizeK": 8,
-     "isDir": false
-    },
-    {
-     "name": "dialogcolors.xml",
-     "sizeK": 8,
-     "isDir": false
-    },
-    {
-     "name": "peripherals.xml",
-     "sizeK": 8,
-     "isDir": false
-    },
-    {
-     "name": "addon-manifest.xml",
-     "sizeK": 4,
-     "isDir": false
-    },
-    {
-     "name": "playercorefactory.xml",
-     "sizeK": 4,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/youtube.leanback.v4/webOSUserScripts": {
-   "path": "/media/developer/apps/usr/palm/applications/youtube.leanback.v4/webOSUserScripts",
-   "totalK": 1352,
-   "children": [
-    {
-     "name": "userScript.js.map",
-     "sizeK": 1088,
-     "isDir": false
-    },
-    {
-     "name": "userScript.js",
-     "sizeK": 256,
-     "isDir": false
-    },
-    {
-     "name": "userScript.js.LICENSE.txt",
-     "sizeK": 4,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/inputstream.ffmpegdirect": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/inputstream.ffmpegdirect",
-   "totalK": 22456,
-   "children": [
-    {
-     "name": "inputstream.ffmpegdirect.so.22.2.10",
-     "sizeK": 21252,
-     "isDir": false
-    },
-    {
-     "name": "resources",
-     "sizeK": 1016,
-     "isDir": true
-    },
-    {
-     "name": "fanart.jpg",
-     "sizeK": 148,
-     "isDir": false
-    },
-    {
-     "name": "addon.xml",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "changelog.txt",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "icon.png",
-     "sizeK": 4,
-     "isDir": false
-    },
-    {
-     "name": "inputstream.ffmpegdirect.so",
-     "sizeK": 0,
-     "isDir": false
-    },
-    {
-     "name": "inputstream.ffmpegdirect.so.22.0",
-     "sizeK": 0,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/webinterface.default": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/webinterface.default",
-   "totalK": 9192,
-   "children": [
-    {
-     "name": "themes",
-     "sizeK": 3932,
-     "isDir": true
-    },
-    {
-     "name": "screenshots",
-     "sizeK": 1480,
-     "isDir": true
-    },
-    {
-     "name": "lang",
-     "sizeK": 1232,
-     "isDir": true
-    },
-    {
-     "name": "lib",
-     "sizeK": 972,
-     "isDir": true
-    },
-    {
-     "name": "js",
-     "sizeK": 904,
-     "isDir": true
-    },
-    {
-     "name": "images",
-     "sizeK": 616,
-     "isDir": true
-    },
-    {
-     "name": "addon.xml",
-     "sizeK": 12,
-     "isDir": false
-    },
-    {
-     "name": "videoPlayer.html",
-     "sizeK": 8,
-     "isDir": false
-    },
-    {
-     "name": "favicon.png",
-     "sizeK": 4,
-     "isDir": false
-    },
-    {
-     "name": "icon-128.png",
-     "sizeK": 4,
-     "isDir": false
-    },
-    {
-     "name": "icon-144.png",
-     "sizeK": 4,
-     "isDir": false
-    },
-    {
-     "name": "icon-152.png",
-     "sizeK": 4,
-     "isDir": false
-    },
-    {
-     "name": "icon-192.png",
-     "sizeK": 4,
-     "isDir": false
-    },
-    {
-     "name": "icon.png",
-     "sizeK": 4,
-     "isDir": false
-    },
-    {
-     "name": "index.html",
-     "sizeK": 4,
-     "isDir": false
-    },
-    {
-     "name": "manifest.json",
-     "sizeK": 4,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/skin.estuary": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/skin.estuary",
-   "totalK": 8404,
-   "children": [
-    {
-     "name": "language",
-     "sizeK": 1824,
-     "isDir": true
-    },
-    {
-     "name": "media",
-     "sizeK": 1448,
-     "isDir": true
-    },
-    {
-     "name": "xml",
-     "sizeK": 1368,
-     "isDir": true
-    },
-    {
-     "name": "resources",
-     "sizeK": 1144,
-     "isDir": true
-    },
-    {
-     "name": "extras",
-     "sizeK": 960,
-     "isDir": true
-    },
-    {
-     "name": "fonts",
-     "sizeK": 956,
-     "isDir": true
-    },
-    {
-     "name": "themes",
-     "sizeK": 548,
-     "isDir": true
-    },
-    {
-     "name": "colors",
-     "sizeK": 60,
-     "isDir": true
-    },
-    {
-     "name": "playlists",
-     "sizeK": 56,
-     "isDir": true
-    },
-    {
-     "name": "addon.xml",
-     "sizeK": 28,
-     "isDir": false
-    },
-    {
-     "name": "LICENSE.txt",
-     "sizeK": 4,
-     "isDir": false
-    },
-    {
-     "name": "changelog.txt",
-     "sizeK": 4,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/pvr.zattoo": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/pvr.zattoo",
-   "totalK": 6272,
-   "children": [
-    {
-     "name": "resources",
-     "sizeK": 4016,
-     "isDir": true
-    },
-    {
-     "name": "pvr.zattoo.so.22.2.3",
-     "sizeK": 2136,
-     "isDir": false
-    },
-    {
-     "name": "fanart.jpg",
-     "sizeK": 60,
-     "isDir": false
-    },
-    {
-     "name": "icon.png",
-     "sizeK": 20,
-     "isDir": false
-    },
-    {
-     "name": "LICENSE.txt",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "changelog.txt",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "addon.xml",
-     "sizeK": 4,
-     "isDir": false
-    },
-    {
-     "name": "pvr.zattoo.so",
-     "sizeK": 0,
-     "isDir": false
-    },
-    {
-     "name": "pvr.zattoo.so.22.0",
-     "sizeK": 0,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/inputstream.rtmp": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/inputstream.rtmp",
-   "totalK": 5548,
-   "children": [
-    {
-     "name": "inputstream.rtmp.so.22.1.3",
-     "sizeK": 4848,
-     "isDir": false
-    },
-    {
-     "name": "resources",
-     "sizeK": 632,
-     "isDir": true
-    },
-    {
-     "name": "icon.png",
-     "sizeK": 48,
-     "isDir": false
-    },
-    {
-     "name": "addon.xml",
-     "sizeK": 12,
-     "isDir": false
-    },
-    {
-     "name": "changelog.txt",
-     "sizeK": 4,
-     "isDir": false
-    },
-    {
-     "name": "inputstream.rtmp.so",
-     "sizeK": 0,
-     "isDir": false
-    },
-    {
-     "name": "inputstream.rtmp.so.22.0",
-     "sizeK": 0,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/pvr.iptvsimple": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/pvr.iptvsimple",
-   "totalK": 5172,
-   "children": [
-    {
-     "name": "resources",
-     "sizeK": 3488,
-     "isDir": true
-    },
-    {
-     "name": "pvr.iptvsimple.so.22.6.5",
-     "sizeK": 1556,
-     "isDir": false
-    },
-    {
-     "name": "icon.png",
-     "sizeK": 64,
-     "isDir": false
-    },
-    {
-     "name": "addon.xml",
-     "sizeK": 36,
-     "isDir": false
-    },
-    {
-     "name": "changelog.txt",
-     "sizeK": 24,
-     "isDir": false
-    },
-    {
-     "name": "pvr.iptvsimple.so",
-     "sizeK": 0,
-     "isDir": false
-    },
-    {
-     "name": "pvr.iptvsimple.so.22.0",
-     "sizeK": 0,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/resource.images.weathericons.default": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/resource.images.weathericons.default",
-   "totalK": 4760,
-   "children": [
-    {
-     "name": "resources",
-     "sizeK": 4676,
-     "isDir": true
-    },
-    {
-     "name": "icon.png",
-     "sizeK": 72,
-     "isDir": false
-    },
-    {
-     "name": "License.txt",
-     "sizeK": 4,
-     "isDir": false
-    },
-    {
-     "name": "addon.xml",
-     "sizeK": 4,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/inputstream.adaptive": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/inputstream.adaptive",
-   "totalK": 4704,
-   "children": [
-    {
-     "name": "inputstream.adaptive.so.22.3.22",
-     "sizeK": 2968,
-     "isDir": false
-    },
-    {
-     "name": "resources",
-     "sizeK": 1424,
-     "isDir": true
-    },
-    {
-     "name": "icon.png",
-     "sizeK": 152,
-     "isDir": false
-    },
-    {
-     "name": "fanart.jpg",
-     "sizeK": 104,
-     "isDir": false
-    },
-    {
-     "name": "changelog.txt",
-     "sizeK": 40,
-     "isDir": false
-    },
-    {
-     "name": "addon.xml",
-     "sizeK": 12,
-     "isDir": false
-    },
-    {
-     "name": "inputstream.adaptive.so",
-     "sizeK": 0,
-     "isDir": false
-    },
-    {
-     "name": "inputstream.adaptive.so.22.0",
-     "sizeK": 0,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/addons": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/addons",
-   "totalK": 31956,
-   "children": [
-    {
-     "name": "packages",
-     "sizeK": 9552,
-     "isDir": true
-    },
-    {
-     "name": "plugin.video.OnePlay.Matrix",
-     "sizeK": 7300,
-     "isDir": true
-    },
-    {
-     "name": "script.limpeza.Matrix",
-     "sizeK": 3456,
-     "isDir": true
-    },
-    {
-     "name": "script.module.chardet",
-     "sizeK": 2256,
-     "isDir": true
-    },
-    {
-     "name": "vkkodi.repo",
-     "sizeK": 1324,
-     "isDir": true
-    },
-    {
-     "name": "service.xbmc.versioncheck",
-     "sizeK": 1208,
-     "isDir": true
-    },
-    {
-     "name": "script.module.urllib3",
-     "sizeK": 988,
-     "isDir": true
-    },
-    {
-     "name": "plugin.video.BrazucaPlay",
-     "sizeK": 888,
-     "isDir": true
-    },
-    {
-     "name": "metadata.generic.albums",
-     "sizeK": 880,
-     "isDir": true
-    },
-    {
-     "name": "metadata.tvshows.themoviedb.org.python",
-     "sizeK": 832,
-     "isDir": true
-    },
-    {
-     "name": "metadata.generic.artists",
-     "sizeK": 812,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.pt_br",
-     "sizeK": 640,
-     "isDir": true
-    },
-    {
-     "name": "script.module.idna",
-     "sizeK": 520,
-     "isDir": true
-    },
-    {
-     "name": "script.module.requests",
-     "sizeK": 496,
-     "isDir": true
-    },
-    {
-     "name": "script.module.certifi",
-     "sizeK": 336,
-     "isDir": true
-    },
-    {
-     "name": "script.module.simplejson",
-     "sizeK": 224,
-     "isDir": true
-    },
-    {
-     "name": "script.module.kodi-six",
-     "sizeK": 124,
-     "isDir": true
-    },
-    {
-     "name": "script.module.six",
-     "sizeK": 112,
-     "isDir": true
-    },
-    {
-     "name": "temp",
-     "sizeK": 4,
-     "isDir": true
-    }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/userdata": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/userdata",
-   "totalK": 25776,
-   "children": [
-    {
-     "name": "Thumbnails",
-     "sizeK": 21868,
-     "isDir": true
-    },
-    {
-     "name": "Database",
-     "sizeK": 2928,
-     "isDir": true
-    },
-    {
-     "name": "addon_data",
-     "sizeK": 880,
-     "isDir": true
-    },
-    {
-     "name": "guisettings.xml",
-     "sizeK": 36,
-     "isDir": false
-    },
-    {
-     "name": "playlists",
-     "sizeK": 16,
-     "isDir": true
-    },
-    {
-     "name": "peripheral_data",
-     "sizeK": 12,
-     "isDir": true
-    },
-    {
-     "name": "RssFeeds.xml",
-     "sizeK": 4,
-     "isDir": false
-    },
-    {
-     "name": "Savestates",
-     "sizeK": 4,
-     "isDir": true
-    },
-    {
-     "name": "advancedsettings.xml",
-     "sizeK": 4,
-     "isDir": false
-    },
-    {
-     "name": "favourites.xml",
-     "sizeK": 4,
-     "isDir": false
-    },
-    {
-     "name": "keymaps",
-     "sizeK": 4,
-     "isDir": true
-    },
-    {
-     "name": "library",
-     "sizeK": 4,
-     "isDir": true
-    },
-    {
-     "name": "profiles.xml",
-     "sizeK": 4,
-     "isDir": false
-    },
-    {
-     "name": "sources.xml",
-     "sizeK": 4,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/lib/python3.14": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/lib/python3.14",
-   "totalK": 46020,
-   "children": [
-    {
-     "name": "site-packages",
-     "sizeK": 25944,
-     "isDir": true
-    },
-    {
-     "name": "__pycache__",
-     "sizeK": 2564,
-     "isDir": true
-    },
-    {
-     "name": "ensurepip",
-     "sizeK": 1804,
-     "isDir": true
-    },
-    {
-     "name": "encodings",
-     "sizeK": 1780,
-     "isDir": true
-    },
-    {
-     "name": "idlelib",
-     "sizeK": 1308,
-     "isDir": true
-    },
-    {
-     "name": "email",
-     "sizeK": 704,
-     "isDir": true
-    },
-    {
-     "name": "xml",
-     "sizeK": 624,
-     "isDir": true
-    },
-    {
-     "name": "pydoc_data",
-     "sizeK": 600,
-     "isDir": true
-    },
-    {
-     "name": "asyncio",
-     "sizeK": 592,
-     "isDir": true
-    },
-    {
-     "name": "http",
-     "sizeK": 476,
-     "isDir": true
-    },
-    {
-     "name": "importlib",
-     "sizeK": 472,
-     "isDir": true
-    },
-    {
-     "name": "multiprocessing",
-     "sizeK": 360,
-     "isDir": true
-    },
-    {
-     "name": "tkinter",
-     "sizeK": 328,
-     "isDir": true
-    },
-    {
-     "name": "urllib",
-     "sizeK": 316,
-     "isDir": true
-    },
-    {
-     "name": "logging",
-     "sizeK": 296,
-     "isDir": true
-    },
-    {
-     "name": "unittest",
-     "sizeK": 292,
-     "isDir": true
-    },
-    {
-     "name": "_pyrepl",
-     "sizeK": 288,
-     "isDir": true
-    },
-    {
-     "name": "zipfile",
-     "sizeK": 272,
-     "isDir": true
-    },
-    {
-     "name": "_pydecimal.py",
-     "sizeK": 224,
-     "isDir": false
-    },
-    {
-     "name": "re",
-     "sizeK": 224,
-     "isDir": true
-    },
-    {
-     "name": "html",
-     "sizeK": 220,
-     "isDir": true
-    },
-    {
-     "name": "pathlib",
-     "sizeK": 184,
-     "isDir": true
-    },
-    {
-     "name": "turtle.py",
-     "sizeK": 148,
-     "isDir": false
-    },
-    {
-     "name": "collections",
-     "sizeK": 136,
-     "isDir": true
-    },
-    {
-     "name": "concurrent",
-     "sizeK": 136,
-     "isDir": true
-    },
-    {
-     "name": "typing.py",
-     "sizeK": 136,
-     "isDir": false
-    },
-    {
-     "name": "ctypes",
-     "sizeK": 132,
-     "isDir": true
-    },
-    {
-     "name": "json",
-     "sizeK": 132,
-     "isDir": true
-    },
-    {
-     "name": "pdb.py",
-     "sizeK": 132,
-     "isDir": false
-    },
-    {
-     "name": "inspect.py",
-     "sizeK": 128,
-     "isDir": false
-    },
-    {
-     "name": "turtledemo",
-     "sizeK": 120,
-     "isDir": true
-    },
-    {
-     "name": "tarfile.py",
-     "sizeK": 116,
-     "isDir": false
-    },
-    {
-     "name": "pydoc.py",
-     "sizeK": 112,
-     "isDir": false
-    },
-    {
-     "name": "argparse.py",
-     "sizeK": 108,
-     "isDir": false
-    },
-    {
-     "name": "doctest.py",
-     "sizeK": 108,
-     "isDir": false
-    },
-    {
-     "name": "compression",
-     "sizeK": 104,
-     "isDir": true
-    },
-    {
-     "name": "_pydatetime.py",
-     "sizeK": 96,
-     "isDir": false
-    },
-    {
-     "name": "_pyio.py",
-     "sizeK": 96,
-     "isDir": false
-    },
-    {
-     "name": "xmlrpc",
-     "sizeK": 96,
-     "isDir": true
-    },
-    {
-     "name": "pickletools.py",
-     "sizeK": 92,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 156,
-   "hiddenK": 4016,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/media/Fonts": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/media/Fonts",
-   "totalK": 4644,
-   "children": [
-    {
-     "name": "arial.ttf",
-     "sizeK": 4536,
-     "isDir": false
-    },
-    {
-     "name": "teletext.ttf",
-     "sizeK": 104,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/webinterface.default/themes": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/webinterface.default/themes",
-   "totalK": 3932,
-   "children": [
-    {
-     "name": "base",
-     "sizeK": 3928,
-     "isDir": true
-    }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/webinterface.default/screenshots": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/webinterface.default/screenshots",
-   "totalK": 1480,
-   "children": [
-    {
-     "name": "now-playing.jpg",
-     "sizeK": 228,
-     "isDir": false
-    },
-    {
-     "name": "tv.jpg",
-     "sizeK": 216,
-     "isDir": false
-    },
-    {
-     "name": "movie.jpg",
-     "sizeK": 172,
-     "isDir": false
-    },
-    {
-     "name": "artists.jpg",
-     "sizeK": 168,
-     "isDir": false
-    },
-    {
-     "name": "artist.jpg",
-     "sizeK": 160,
-     "isDir": false
-    },
-    {
-     "name": "search.jpg",
-     "sizeK": 160,
-     "isDir": false
-    },
-    {
-     "name": "edit-media.jpg",
-     "sizeK": 156,
-     "isDir": false
-    },
-    {
-     "name": "addons.jpg",
-     "sizeK": 128,
-     "isDir": false
-    },
-    {
-     "name": "settings.jpg",
-     "sizeK": 88,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/webinterface.default/lang": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/webinterface.default/lang",
-   "totalK": 1232,
-   "children": [
-    {
-     "name": "_strings",
-     "sizeK": 1064,
-     "isDir": true
-    },
-    {
-     "name": "en",
-     "sizeK": 60,
-     "isDir": true
-    },
-    {
-     "name": "pl",
-     "sizeK": 56,
-     "isDir": true
-    },
-    {
-     "name": "de",
-     "sizeK": 24,
-     "isDir": true
-    },
-    {
-     "name": "fr",
-     "sizeK": 16,
-     "isDir": true
-    },
-    {
-     "name": "nl",
-     "sizeK": 8,
-     "isDir": true
-    }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/skin.estuary/language": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/skin.estuary/language",
-   "totalK": 1824,
-   "children": [
-    {
-     "name": "resource.language.ru_ru",
-     "sizeK": 32,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.th_th",
-     "sizeK": 32,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.uk_ua",
-     "sizeK": 32,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.ar_sa",
-     "sizeK": 28,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.be_by",
-     "sizeK": 28,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.bg_bg",
-     "sizeK": 28,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.bs_ba",
-     "sizeK": 28,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.ca_es",
-     "sizeK": 28,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.cs_cz",
-     "sizeK": 28,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.de_de",
-     "sizeK": 28,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.el_gr",
-     "sizeK": 28,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.es_es",
-     "sizeK": 28,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.es_mx",
-     "sizeK": 28,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.fr_fr",
-     "sizeK": 28,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.he_il",
-     "sizeK": 28,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.hu_hu",
-     "sizeK": 28,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.is_is",
-     "sizeK": 28,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.it_it",
-     "sizeK": 28,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.ja_jp",
-     "sizeK": 28,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.ko_kr",
-     "sizeK": 28,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.pl_pl",
-     "sizeK": 28,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.pt_br",
-     "sizeK": 28,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.sr_rs",
-     "sizeK": 28,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.vi_vn",
-     "sizeK": 28,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.af_za",
-     "sizeK": 24,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.da_dk",
-     "sizeK": 24,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.en_gb",
-     "sizeK": 24,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.en_nz",
-     "sizeK": 24,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.en_us",
-     "sizeK": 24,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.es_ar",
-     "sizeK": 24,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.et_ee",
-     "sizeK": 24,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.eu_es",
-     "sizeK": 24,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.fa_ir",
-     "sizeK": 24,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.fi_fi",
-     "sizeK": 24,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.fr_ca",
-     "sizeK": 24,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.gl_es",
-     "sizeK": 24,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.hr_hr",
-     "sizeK": 24,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.id_id",
-     "sizeK": 24,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.lt_lt",
-     "sizeK": 24,
-     "isDir": true
-    },
-    {
-     "name": "resource.language.mk_mk",
-     "sizeK": 24,
-     "isDir": true
-    }
-   ],
-   "hiddenCount": 35,
-   "hiddenK": 752,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/skin.estuary/media": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/skin.estuary/media",
-   "totalK": 1448,
-   "children": [
-    {
-     "name": "Textures.xbt",
-     "sizeK": 768,
-     "isDir": false
-    },
-    {
-     "name": "curial.xbt",
-     "sizeK": 672,
-     "isDir": false
-    },
-    {
-     "name": "flat.xbt",
-     "sizeK": 4,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/skin.estuary/xml": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/skin.estuary/xml",
-   "totalK": 1368,
-   "children": [
-    {
-     "name": "Includes_InfoViewer.xml",
-     "sizeK": 88,
-     "isDir": false
-    },
-    {
-     "name": "Variables.xml",
-     "sizeK": 84,
-     "isDir": false
-    },
-    {
-     "name": "Includes.xml",
-     "sizeK": 68,
-     "isDir": false
-    },
-    {
-     "name": "Includes_Games.xml",
-     "sizeK": 68,
-     "isDir": false
-    },
-    {
-     "name": "Home.xml",
-     "sizeK": 60,
-     "isDir": false
-    },
-    {
-     "name": "Includes_DialogSelect.xml",
-     "sizeK": 40,
-     "isDir": false
-    },
-    {
-     "name": "Includes_Home.xml",
-     "sizeK": 40,
-     "isDir": false
-    },
-    {
-     "name": "DialogVideoInfo.xml",
-     "sizeK": 36,
-     "isDir": false
-    },
-    {
-     "name": "Includes_PVR.xml",
-     "sizeK": 32,
-     "isDir": false
-    },
-    {
-     "name": "DialogKeyboard.xml",
-     "sizeK": 28,
-     "isDir": false
-    },
-    {
-     "name": "Includes_SettingsDialog.xml",
-     "sizeK": 28,
-     "isDir": false
-    },
-    {
-     "name": "DialogMusicInfo.xml",
-     "sizeK": 24,
-     "isDir": false
-    },
-    {
-     "name": "SkinSettings.xml",
-     "sizeK": 24,
-     "isDir": false
-    },
-    {
-     "name": "DialogPVRInfo.xml",
-     "sizeK": 20,
-     "isDir": false
-    },
-    {
-     "name": "DialogPlayerProcessInfo.xml",
-     "sizeK": 20,
-     "isDir": false
-    },
-    {
-     "name": "Includes_MediaMenu.xml",
-     "sizeK": 20,
-     "isDir": false
-    },
-    {
-     "name": "View_54_InfoWall.xml",
-     "sizeK": 20,
-     "isDir": false
-    },
-    {
-     "name": "Custom_1100_AddonLauncher.xml",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "DialogAddonInfo.xml",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "DialogSeekBar.xml",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "Includes_Buttons.xml",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "MusicOSD.xml",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "VideoOSD.xml",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "View_50_List.xml",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "Custom_1109_TopBarOverlay.xml",
-     "sizeK": 12,
-     "isDir": false
-    },
-    {
-     "name": "Defaults.xml",
-     "sizeK": 12,
-     "isDir": false
-    },
-    {
-     "name": "DialogAddonSettings.xml",
-     "sizeK": 12,
-     "isDir": false
-    },
-    {
-     "name": "DialogPVRChannelManager.xml",
-     "sizeK": 12,
-     "isDir": false
-    },
-    {
-     "name": "DialogPVRRadioRDSInfo.xml",
-     "sizeK": 12,
-     "isDir": false
-    },
-    {
-     "name": "Includes_MusicInfo.xml",
-     "sizeK": 12,
-     "isDir": false
-    },
-    {
-     "name": "MyPVRGuide.xml",
-     "sizeK": 12,
-     "isDir": false
-    },
-    {
-     "name": "MyPics.xml",
-     "sizeK": 12,
-     "isDir": false
-    },
-    {
-     "name": "MyWeather.xml",
-     "sizeK": 12,
-     "isDir": false
-    },
-    {
-     "name": "SettingsSystemInfo.xml",
-     "sizeK": 12,
-     "isDir": false
-    },
-    {
-     "name": "View_53_Shift.xml",
-     "sizeK": 12,
-     "isDir": false
-    },
-    {
-     "name": "View_55_WideList.xml",
-     "sizeK": 12,
-     "isDir": false
-    },
-    {
-     "name": "DialogNumeric.xml",
-     "sizeK": 8,
-     "isDir": false
-    },
-    {
-     "name": "DialogPVRChannelGuide.xml",
-     "sizeK": 8,
-     "isDir": false
-    },
-    {
-     "name": "DialogPVRGroupManager.xml",
-     "sizeK": 8,
-     "isDir": false
-    },
-    {
-     "name": "DialogPVRGuideControls.xml",
-     "sizeK": 8,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 70,
-   "hiddenK": 376,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/skin.estuary/resources": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/skin.estuary/resources",
-   "totalK": 1144,
-   "children": [
-    {
-     "name": "screenshot-01.jpg",
-     "sizeK": 168,
-     "isDir": false
-    },
-    {
-     "name": "screenshot-03.jpg",
-     "sizeK": 156,
-     "isDir": false
-    },
-    {
-     "name": "screenshot-04.jpg",
-     "sizeK": 152,
-     "isDir": false
-    },
-    {
-     "name": "screenshot-05.jpg",
-     "sizeK": 152,
-     "isDir": false
-    },
-    {
-     "name": "screenshot-07.jpg",
-     "sizeK": 128,
-     "isDir": false
-    },
-    {
-     "name": "screenshot-08.jpg",
-     "sizeK": 120,
-     "isDir": false
-    },
-    {
-     "name": "screenshot-06.jpg",
-     "sizeK": 92,
-     "isDir": false
-    },
-    {
-     "name": "screenshot-02.jpg",
-     "sizeK": 76,
-     "isDir": false
-    },
-    {
-     "name": "fanart.jpg",
-     "sizeK": 48,
-     "isDir": false
-    },
-    {
-     "name": "icon.png",
-     "sizeK": 48,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/pvr.zattoo/resources": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/pvr.zattoo/resources",
-   "totalK": 4016,
-   "children": [
-    {
-     "name": "media",
-     "sizeK": 3968,
-     "isDir": true
-    },
-    {
-     "name": "language",
-     "sizeK": 28,
-     "isDir": true
-    },
-    {
-     "name": "eit_categories.txt",
-     "sizeK": 8,
-     "isDir": false
-    },
-    {
-     "name": "settings.xml",
-     "sizeK": 8,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/pvr.iptvsimple/resources": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/pvr.iptvsimple/resources",
-   "totalK": 3488,
-   "children": [
-    {
-     "name": "language",
-     "sizeK": 3364,
-     "isDir": true
-    },
-    {
-     "name": "data",
-     "sizeK": 64,
-     "isDir": true
-    },
-    {
-     "name": "instance-settings.xml",
-     "sizeK": 40,
-     "isDir": false
-    },
-    {
-     "name": "settings.xml",
-     "sizeK": 16,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/resource.images.weathericons.default/resources": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/resource.images.weathericons.default/resources",
-   "totalK": 4676,
-   "children": [
-    {
-     "name": "13.png",
-     "sizeK": 128,
-     "isDir": false
-    },
-    {
-     "name": "41.png",
-     "sizeK": 128,
-     "isDir": false
-    },
-    {
-     "name": "43.png",
-     "sizeK": 128,
-     "isDir": false
-    },
-    {
-     "name": "5.png",
-     "sizeK": 124,
-     "isDir": false
-    },
-    {
-     "name": "6.png",
-     "sizeK": 124,
-     "isDir": false
-    },
-    {
-     "name": "7.png",
-     "sizeK": 124,
-     "isDir": false
-    },
-    {
-     "name": "38.png",
-     "sizeK": 120,
-     "isDir": false
-    },
-    {
-     "name": "1.png",
-     "sizeK": 116,
-     "isDir": false
-    },
-    {
-     "name": "10.png",
-     "sizeK": 116,
-     "isDir": false
-    },
-    {
-     "name": "12.png",
-     "sizeK": 116,
-     "isDir": false
-    },
-    {
-     "name": "16.png",
-     "sizeK": 116,
-     "isDir": false
-    },
-    {
-     "name": "17.png",
-     "sizeK": 116,
-     "isDir": false
-    },
-    {
-     "name": "3.png",
-     "sizeK": 116,
-     "isDir": false
-    },
-    {
-     "name": "35.png",
-     "sizeK": 116,
-     "isDir": false
-    },
-    {
-     "name": "4.png",
-     "sizeK": 116,
-     "isDir": false
-    },
-    {
-     "name": "42.png",
-     "sizeK": 116,
-     "isDir": false
-    },
-    {
-     "name": "8.png",
-     "sizeK": 116,
-     "isDir": false
-    },
-    {
-     "name": "18.png",
-     "sizeK": 112,
-     "isDir": false
-    },
-    {
-     "name": "40.png",
-     "sizeK": 112,
-     "isDir": false
-    },
-    {
-     "name": "15.png",
-     "sizeK": 108,
-     "isDir": false
-    },
-    {
-     "name": "46.png",
-     "sizeK": 108,
-     "isDir": false
-    },
-    {
-     "name": "11.png",
-     "sizeK": 100,
-     "isDir": false
-    },
-    {
-     "name": "14.png",
-     "sizeK": 100,
-     "isDir": false
-    },
-    {
-     "name": "39.png",
-     "sizeK": 100,
-     "isDir": false
-    },
-    {
-     "name": "47.png",
-     "sizeK": 100,
-     "isDir": false
-    },
-    {
-     "name": "9.png",
-     "sizeK": 100,
-     "isDir": false
-    },
-    {
-     "name": "23.png",
-     "sizeK": 96,
-     "isDir": false
-    },
-    {
-     "name": "24.png",
-     "sizeK": 96,
-     "isDir": false
-    },
-    {
-     "name": "20.png",
-     "sizeK": 88,
-     "isDir": false
-    },
-    {
-     "name": "28.png",
-     "sizeK": 88,
-     "isDir": false
-    },
-    {
-     "name": "45.png",
-     "sizeK": 88,
-     "isDir": false
-    },
-    {
-     "name": "19.png",
-     "sizeK": 84,
-     "isDir": false
-    },
-    {
-     "name": "0.png",
-     "sizeK": 80,
-     "isDir": false
-    },
-    {
-     "name": "2.png",
-     "sizeK": 80,
-     "isDir": false
-    },
-    {
-     "name": "25.png",
-     "sizeK": 80,
-     "isDir": false
-    },
-    {
-     "name": "32.png",
-     "sizeK": 80,
-     "isDir": false
-    },
-    {
-     "name": "36.png",
-     "sizeK": 80,
-     "isDir": false
-    },
-    {
-     "name": "26.png",
-     "sizeK": 76,
-     "isDir": false
-    },
-    {
-     "name": "30.png",
-     "sizeK": 76,
-     "isDir": false
-    },
-    {
-     "name": "37.png",
-     "sizeK": 76,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 10,
-   "hiddenK": 528,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/inputstream.adaptive/resources": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/addons/inputstream.adaptive/resources",
-   "totalK": 1424,
-   "children": [
-    {
-     "name": "language",
-     "sizeK": 1404,
-     "isDir": true
-    },
-    {
-     "name": "settings.xml",
-     "sizeK": 16,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/addons/packages": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/addons/packages",
-   "totalK": 9552,
-   "children": [
-    {
-     "name": "plugin.video.faustinotv-3.1.1.zip",
-     "sizeK": 5080,
-     "isDir": false
-    },
-    {
-     "name": "plugin.video.OnePlay.Matrix-3.4.8.zip",
-     "sizeK": 4468,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/addons/plugin.video.OnePlay.Matrix": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/addons/plugin.video.OnePlay.Matrix",
-   "totalK": 7300,
-   "children": [
-    {
-     "name": "resources",
-     "sizeK": 6508,
-     "isDir": true
-    },
-    {
-     "name": "fanart.jpg",
-     "sizeK": 388,
-     "isDir": false
-    },
-    {
-     "name": "icon.png",
-     "sizeK": 276,
-     "isDir": false
-    },
-    {
-     "name": "default.py",
-     "sizeK": 72,
-     "isDir": false
-    },
-    {
-     "name": "service.py",
-     "sizeK": 48,
-     "isDir": false
-    },
-    {
-     "name": "addon.xml",
-     "sizeK": 4,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/addons/script.limpeza.Matrix": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/addons/script.limpeza.Matrix",
-   "totalK": 3456,
-   "children": [
-    {
-     "name": "media",
-     "sizeK": 2272,
-     "isDir": true
-    },
-    {
-     "name": "fanart.jpg",
-     "sizeK": 696,
-     "isDir": false
-    },
-    {
-     "name": "icon.png",
-     "sizeK": 208,
-     "isDir": false
-    },
-    {
-     "name": "__pycache__",
-     "sizeK": 100,
-     "isDir": true
-    },
-    {
-     "name": "default.py",
-     "sizeK": 80,
-     "isDir": false
-    },
-    {
-     "name": "resources",
-     "sizeK": 60,
-     "isDir": true
-    },
-    {
-     "name": "LICENSE.txt",
-     "sizeK": 20,
-     "isDir": false
-    },
-    {
-     "name": "service.py",
-     "sizeK": 12,
-     "isDir": false
-    },
-    {
-     "name": "addon.xml",
-     "sizeK": 4,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/addons/script.module.chardet": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/addons/script.module.chardet",
-   "totalK": 2256,
-   "children": [
-    {
-     "name": "lib",
-     "sizeK": 2208,
-     "isDir": true
-    },
-    {
-     "name": "LICENSE.txt",
-     "sizeK": 28,
-     "isDir": false
-    },
-    {
-     "name": "resources",
-     "sizeK": 12,
-     "isDir": true
-    },
-    {
-     "name": "addon.xml",
-     "sizeK": 4,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/addons/vkkodi.repo": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/addons/vkkodi.repo",
-   "totalK": 1324,
-   "children": [
-    {
-     "name": "fanart.jpg",
-     "sizeK": 848,
-     "isDir": false
-    },
-    {
-     "name": "icon.png",
-     "sizeK": 468,
-     "isDir": false
-    },
-    {
-     "name": "addon.xml",
-     "sizeK": 4,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/addons/service.xbmc.versioncheck": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/addons/service.xbmc.versioncheck",
-   "totalK": 1208,
-   "children": [
-    {
-     "name": "resources",
-     "sizeK": 1096,
-     "isDir": true
-    },
-    {
-     "name": "LICENSES",
-     "sizeK": 68,
-     "isDir": true
-    },
-    {
-     "name": "addon.xml",
-     "sizeK": 24,
-     "isDir": false
-    },
-    {
-     "name": "icon.png",
-     "sizeK": 16,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/userdata/Thumbnails": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/userdata/Thumbnails",
-   "totalK": 21868,
-   "children": [
-    {
-     "name": "9",
-     "sizeK": 3416,
-     "isDir": true
-    },
-    {
-     "name": "c",
-     "sizeK": 2012,
-     "isDir": true
-    },
-    {
-     "name": "d",
-     "sizeK": 1820,
-     "isDir": true
-    },
-    {
-     "name": "e",
-     "sizeK": 1640,
-     "isDir": true
-    },
-    {
-     "name": "f",
-     "sizeK": 1584,
-     "isDir": true
-    },
-    {
-     "name": "2",
-     "sizeK": 1400,
-     "isDir": true
-    },
-    {
-     "name": "b",
-     "sizeK": 1320,
-     "isDir": true
-    },
-    {
-     "name": "8",
-     "sizeK": 1240,
-     "isDir": true
-    },
-    {
-     "name": "6",
-     "sizeK": 1188,
-     "isDir": true
-    },
-    {
-     "name": "7",
-     "sizeK": 1116,
-     "isDir": true
-    },
-    {
-     "name": "1",
-     "sizeK": 1104,
-     "isDir": true
-    },
-    {
-     "name": "5",
-     "sizeK": 936,
-     "isDir": true
-    },
-    {
-     "name": "3",
-     "sizeK": 820,
-     "isDir": true
-    },
-    {
-     "name": "4",
-     "sizeK": 764,
-     "isDir": true
-    },
-    {
-     "name": "0",
-     "sizeK": 756,
-     "isDir": true
-    },
-    {
-     "name": "a",
-     "sizeK": 740,
-     "isDir": true
-    },
-    {
-     "name": "Video",
-     "sizeK": 8,
-     "isDir": true
-    }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/userdata/Database": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/.kodi/userdata/Database",
-   "totalK": 2928,
-   "children": [
-    {
-     "name": "Addons33.db",
-     "sizeK": 1568,
-     "isDir": false
-    },
-    {
-     "name": "Textures14.db",
-     "sizeK": 584,
-     "isDir": false
-    },
-    {
-     "name": "MyVideos149.db",
-     "sizeK": 412,
-     "isDir": false
-    },
-    {
-     "name": "MyMusic84.db",
-     "sizeK": 220,
-     "isDir": false
-    },
-    {
-     "name": "TV48.db",
-     "sizeK": 52,
-     "isDir": false
-    },
-    {
-     "name": "ViewModes6.db",
-     "sizeK": 36,
-     "isDir": false
-    },
-    {
-     "name": "Epg22.db",
-     "sizeK": 32,
-     "isDir": false
-    },
-    {
-     "name": "Games1.db",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "CDDB",
-     "sizeK": 4,
-     "isDir": true
-    },
-    {
-     "name": "Textures13.db",
-     "sizeK": 0,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/lib/python3.14/site-packages": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/lib/python3.14/site-packages",
-   "totalK": 25944,
-   "children": [
-    {
-     "name": "setuptools",
-     "sizeK": 10464,
-     "isDir": true
-    },
-    {
-     "name": "Cryptodome",
-     "sizeK": 9852,
-     "isDir": true
-    },
-    {
-     "name": "PIL",
-     "sizeK": 4640,
-     "isDir": true
-    },
-    {
-     "name": "pkg_resources",
-     "sizeK": 604,
-     "isDir": true
-    },
-    {
-     "name": "setuptools-80.9.0.dist-info",
-     "sizeK": 116,
-     "isDir": true
-    },
-    {
-     "name": "EGG-INFO",
-     "sizeK": 92,
-     "isDir": true
-    },
-    {
-     "name": "pillow-12.0.0-py3.14.egg-info",
-     "sizeK": 88,
-     "isDir": true
-    },
-    {
-     "name": "pycryptodomex-3.23.0-py3.14.egg-info",
-     "sizeK": 40,
-     "isDir": true
-    },
-    {
-     "name": "_distutils_hack",
-     "sizeK": 36,
-     "isDir": true
-    },
-    {
-     "name": "README.txt",
-     "sizeK": 4,
-     "isDir": false
-    },
-    {
-     "name": "distutils-precedence.pth",
-     "sizeK": 4,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/lib/python3.14/__pycache__": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/lib/python3.14/__pycache__",
-   "totalK": 2564,
-   "children": [
-    {
-     "name": "_pydecimal.cpython-314.opt-1.pyc",
-     "sizeK": 224,
-     "isDir": false
-    },
-    {
-     "name": "typing.cpython-314.opt-1.pyc",
-     "sizeK": 168,
-     "isDir": false
-    },
-    {
-     "name": "inspect.cpython-314.opt-1.pyc",
-     "sizeK": 136,
-     "isDir": false
-    },
-    {
-     "name": "argparse.cpython-314.opt-1.pyc",
-     "sizeK": 112,
-     "isDir": false
-    },
-    {
-     "name": "ipaddress.cpython-314.opt-1.pyc",
-     "sizeK": 92,
-     "isDir": false
-    },
-    {
-     "name": "enum.cpython-314.opt-1.pyc",
-     "sizeK": 88,
-     "isDir": false
-    },
-    {
-     "name": "pickle.cpython-314.opt-1.pyc",
-     "sizeK": 84,
-     "isDir": false
-    },
-    {
-     "name": "subprocess.cpython-314.opt-1.pyc",
-     "sizeK": 84,
-     "isDir": false
-    },
-    {
-     "name": "traceback.cpython-314.opt-1.pyc",
-     "sizeK": 80,
-     "isDir": false
-    },
-    {
-     "name": "shutil.cpython-314.opt-1.pyc",
-     "sizeK": 72,
-     "isDir": false
-    },
-    {
-     "name": "locale.cpython-314.opt-1.pyc",
-     "sizeK": 68,
-     "isDir": false
-    },
-    {
-     "name": "ssl.cpython-314.opt-1.pyc",
-     "sizeK": 68,
-     "isDir": false
-    },
-    {
-     "name": "threading.cpython-314.opt-1.pyc",
-     "sizeK": 68,
-     "isDir": false
-    },
-    {
-     "name": "dataclasses.cpython-314.opt-1.pyc",
-     "sizeK": 56,
-     "isDir": false
-    },
-    {
-     "name": "dis.cpython-314.opt-1.pyc",
-     "sizeK": 56,
-     "isDir": false
-    },
-    {
-     "name": "annotationlib.cpython-314.opt-1.pyc",
-     "sizeK": 52,
-     "isDir": false
-    },
-    {
-     "name": "calendar.cpython-314.opt-1.pyc",
-     "sizeK": 48,
-     "isDir": false
-    },
-    {
-     "name": "functools.cpython-314.opt-1.pyc",
-     "sizeK": 48,
-     "isDir": false
-    },
-    {
-     "name": "platform.cpython-314.opt-1.pyc",
-     "sizeK": 48,
-     "isDir": false
-    },
-    {
-     "name": "socket.cpython-314.opt-1.pyc",
-     "sizeK": 44,
-     "isDir": false
-    },
-    {
-     "name": "tempfile.cpython-314.opt-1.pyc",
-     "sizeK": 44,
-     "isDir": false
-    },
-    {
-     "name": "_py_warnings.cpython-314.opt-1.pyc",
-     "sizeK": 40,
-     "isDir": false
-    },
-    {
-     "name": "random.cpython-314.opt-1.pyc",
-     "sizeK": 40,
-     "isDir": false
-    },
-    {
-     "name": "gzip.cpython-314.opt-1.pyc",
-     "sizeK": 36,
-     "isDir": false
-    },
-    {
-     "name": "socketserver.cpython-314.opt-1.pyc",
-     "sizeK": 36,
-     "isDir": false
-    },
-    {
-     "name": "ast.cpython-314.opt-1.pyc",
-     "sizeK": 32,
-     "isDir": false
-    },
-    {
-     "name": "contextlib.cpython-314.opt-1.pyc",
-     "sizeK": 32,
-     "isDir": false
-    },
-    {
-     "name": "mimetypes.cpython-314.opt-1.pyc",
-     "sizeK": 32,
-     "isDir": false
-    },
-    {
-     "name": "base64.cpython-314.opt-1.pyc",
-     "sizeK": 28,
-     "isDir": false
-    },
-    {
-     "name": "glob.cpython-314.opt-1.pyc",
-     "sizeK": 28,
-     "isDir": false
-    },
-    {
-     "name": "selectors.cpython-314.opt-1.pyc",
-     "sizeK": 28,
-     "isDir": false
-    },
-    {
-     "name": "stringprep.cpython-314.opt-1.pyc",
-     "sizeK": 28,
-     "isDir": false
-    },
-    {
-     "name": "tokenize.cpython-314.opt-1.pyc",
-     "sizeK": 28,
-     "isDir": false
-    },
-    {
-     "name": "weakref.cpython-314.opt-1.pyc",
-     "sizeK": 28,
-     "isDir": false
-    },
-    {
-     "name": "gettext.cpython-314.opt-1.pyc",
-     "sizeK": 24,
-     "isDir": false
-    },
-    {
-     "name": "_colorize.cpython-314.opt-1.pyc",
-     "sizeK": 20,
-     "isDir": false
-    },
-    {
-     "name": "heapq.cpython-314.opt-1.pyc",
-     "sizeK": 20,
-     "isDir": false
-    },
-    {
-     "name": "lzma.cpython-314.opt-1.pyc",
-     "sizeK": 20,
-     "isDir": false
-    },
-    {
-     "name": "operator.cpython-314.opt-1.pyc",
-     "sizeK": 20,
-     "isDir": false
-    },
-    {
-     "name": "queue.cpython-314.opt-1.pyc",
-     "sizeK": 20,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 29,
-   "hiddenK": 280,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/lib/python3.14/ensurepip": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/lib/python3.14/ensurepip",
-   "totalK": 1804,
-   "children": [
-    {
-     "name": "_bundled",
-     "sizeK": 1776,
-     "isDir": true
-    },
-    {
-     "name": "__init__.py",
-     "sizeK": 12,
-     "isDir": false
-    },
-    {
-     "name": "__main__.py",
-     "sizeK": 4,
-     "isDir": false
-    },
-    {
-     "name": "__pycache__",
-     "sizeK": 4,
-     "isDir": true
-    },
-    {
-     "name": "_uninstall.py",
-     "sizeK": 4,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 0,
-   "hiddenK": 0,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/lib/python3.14/encodings": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/lib/python3.14/encodings",
-   "totalK": 1780,
-   "children": [
-    {
-     "name": "__pycache__",
-     "sizeK": 52,
-     "isDir": true
-    },
-    {
-     "name": "cp1125.py",
-     "sizeK": 36,
-     "isDir": false
-    },
-    {
-     "name": "cp437.py",
-     "sizeK": 36,
-     "isDir": false
-    },
-    {
-     "name": "cp737.py",
-     "sizeK": 36,
-     "isDir": false
-    },
-    {
-     "name": "cp775.py",
-     "sizeK": 36,
-     "isDir": false
-    },
-    {
-     "name": "cp850.py",
-     "sizeK": 36,
-     "isDir": false
-    },
-    {
-     "name": "cp852.py",
-     "sizeK": 36,
-     "isDir": false
-    },
-    {
-     "name": "cp855.py",
-     "sizeK": 36,
-     "isDir": false
-    },
-    {
-     "name": "cp857.py",
-     "sizeK": 36,
-     "isDir": false
-    },
-    {
-     "name": "cp858.py",
-     "sizeK": 36,
-     "isDir": false
-    },
-    {
-     "name": "cp860.py",
-     "sizeK": 36,
-     "isDir": false
-    },
-    {
-     "name": "cp861.py",
-     "sizeK": 36,
-     "isDir": false
-    },
-    {
-     "name": "cp862.py",
-     "sizeK": 36,
-     "isDir": false
-    },
-    {
-     "name": "cp863.py",
-     "sizeK": 36,
-     "isDir": false
-    },
-    {
-     "name": "cp864.py",
-     "sizeK": 36,
-     "isDir": false
-    },
-    {
-     "name": "cp865.py",
-     "sizeK": 36,
-     "isDir": false
-    },
-    {
-     "name": "cp866.py",
-     "sizeK": 36,
-     "isDir": false
-    },
-    {
-     "name": "cp869.py",
-     "sizeK": 36,
-     "isDir": false
-    },
-    {
-     "name": "mac_arabic.py",
-     "sizeK": 36,
-     "isDir": false
-    },
-    {
-     "name": "aliases.py",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "cp037.py",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "cp1006.py",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "cp1026.py",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "cp1140.py",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "cp1250.py",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "cp1251.py",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "cp1252.py",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "cp1253.py",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "cp1254.py",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "cp1255.py",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "cp1256.py",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "cp1257.py",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "cp1258.py",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "cp273.py",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "cp500.py",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "cp720.py",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "cp856.py",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "cp874.py",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "cp875.py",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "hp_roman8.py",
-     "sizeK": 16,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 84,
-   "hiddenK": 740,
-   "partial": false
-  },
-  "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/lib/python3.14/idlelib": {
-   "path": "/media/developer/apps/usr/palm/applications/org.xbmc.kodi/lib/python3.14/idlelib",
-   "totalK": 1308,
-   "children": [
-    {
-     "name": "Icons",
-     "sizeK": 148,
-     "isDir": true
-    },
-    {
-     "name": "configdialog.py",
-     "sizeK": 104,
-     "isDir": false
-    },
-    {
-     "name": "editor.py",
-     "sizeK": 68,
-     "isDir": false
-    },
-    {
-     "name": "help.html",
-     "sizeK": 64,
-     "isDir": false
-    },
-    {
-     "name": "pyshell.py",
-     "sizeK": 64,
-     "isDir": false
-    },
-    {
-     "name": "ChangeLog",
-     "sizeK": 56,
-     "isDir": false
-    },
-    {
-     "name": "News3.txt",
-     "sizeK": 56,
-     "isDir": false
-    },
-    {
-     "name": "config.py",
-     "sizeK": 40,
-     "isDir": false
-    },
-    {
-     "name": "NEWS2x.txt",
-     "sizeK": 28,
-     "isDir": false
-    },
-    {
-     "name": "autocomplete_w.py",
-     "sizeK": 24,
-     "isDir": false
-    },
-    {
-     "name": "debugger.py",
-     "sizeK": 24,
-     "isDir": false
-    },
-    {
-     "name": "rpc.py",
-     "sizeK": 24,
-     "isDir": false
-    },
-    {
-     "name": "run.py",
-     "sizeK": 24,
-     "isDir": false
-    },
-    {
-     "name": "iomenu.py",
-     "sizeK": 20,
-     "isDir": false
-    },
-    {
-     "name": "multicall.py",
-     "sizeK": 20,
-     "isDir": false
-    },
-    {
-     "name": "pyparse.py",
-     "sizeK": 20,
-     "isDir": false
-    },
-    {
-     "name": "sidebar.py",
-     "sizeK": 20,
-     "isDir": false
-    },
-    {
-     "name": "tree.py",
-     "sizeK": 20,
-     "isDir": false
-    },
-    {
-     "name": "colorizer.py",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "config_key.py",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "format.py",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "help.py",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "hyperparser.py",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "query.py",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "squeezer.py",
-     "sizeK": 16,
-     "isDir": false
-    },
-    {
-     "name": "HISTORY.txt",
-     "sizeK": 12,
-     "isDir": false
-    },
-    {
-     "name": "README.txt",
-     "sizeK": 12,
-     "isDir": false
-    },
-    {
-     "name": "TODO.txt",
-     "sizeK": 12,
-     "isDir": false
-    },
-    {
-     "name": "autocomplete.py",
-     "sizeK": 12,
-     "isDir": false
-    },
-    {
-     "name": "browser.py",
-     "sizeK": 12,
-     "isDir": false
-    },
-    {
-     "name": "codecontext.py",
-     "sizeK": 12,
-     "isDir": false
-    },
-    {
-     "name": "config-keys.def",
-     "sizeK": 12,
-     "isDir": false
-    },
-    {
-     "name": "debugger_r.py",
-     "sizeK": 12,
-     "isDir": false
-    },
-    {
-     "name": "help_about.py",
-     "sizeK": 12,
-     "isDir": false
-    },
-    {
-     "name": "macosx.py",
-     "sizeK": 12,
-     "isDir": false
-    },
-    {
-     "name": "replace.py",
-     "sizeK": 12,
-     "isDir": false
-    },
-    {
-     "name": "runscript.py",
-     "sizeK": 12,
-     "isDir": false
-    },
-    {
-     "name": "undo.py",
-     "sizeK": 12,
-     "isDir": false
-    },
-    {
-     "name": "calltip.py",
-     "sizeK": 8,
-     "isDir": false
-    },
-    {
-     "name": "calltip_w.py",
-     "sizeK": 8,
-     "isDir": false
-    }
-   ],
-   "hiddenCount": 37,
-   "hiddenK": 196,
-   "partial": false
-  }
- },
- "elapsedMs": 2575
+  "elapsedMs": 2575
 }
