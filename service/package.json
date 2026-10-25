@@ -1,6 +1,6 @@
 {
   "name": "org.local.armazenamento.service",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Serviço somente leitura que mede o armazenamento da TV",
   "main": "service.js",
   "private": true,

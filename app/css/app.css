@@ -168,15 +168,8 @@ main { max-width: 64rem; margin: 0 auto; }
 .mem-sum { color: var(--muted); font-size: 0.95rem; }
 .mem .bar { height: 0.6rem; margin-top: 0.7rem; }
 
-/* Botão de ação em lista (manutenção) */
-.row.action {
-  text-align: left;
-  font-size: 1.15rem;
-  font-weight: 600;
-  padding: 1rem 1.1rem;
-}
-.row.action::after { content: '›'; float: right; color: var(--muted); font-size: 1.6rem; line-height: 1; }
-.row.action:focus::after { color: var(--focus); }
+/* Botão de ação em lista (manutenção) — usa o mesmo layout de .row (row-head/size/chevron) */
+.row.action { padding: 1rem 1.1rem; }
 
 /* Telas de confirmação/resultado da limpeza */
 .actions { margin-top: 1.6rem; display: flex; gap: 1rem; flex-wrap: wrap; }

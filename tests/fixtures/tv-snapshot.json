@@ -63,6 +63,29 @@
       "availK": 150036,
       "freeK": 30604,
       "usedK": 1101980
+    },
+    "kodiCache": {
+      "partial": false,
+      "targets": [
+        {
+          "key": "thumbnails",
+          "label": "Miniaturas do Kodi",
+          "exists": true,
+          "sizeK": 138352
+        },
+        {
+          "key": "packages",
+          "label": "Pacotes de add-ons (.zip)",
+          "exists": true,
+          "sizeK": 9552
+        },
+        {
+          "key": "temp",
+          "label": "Temporários e logs do Kodi",
+          "exists": true,
+          "sizeK": 116
+        }
+      ]
     }
   },
   "folders": {

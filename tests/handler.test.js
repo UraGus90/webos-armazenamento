@@ -105,6 +105,31 @@ test('expõe getCleanables/clean só quando um cleaner é fornecido', async () =
   assert.deepStrictEqual(calls, [['clean', { keys: ['temp'] }]]);
 });
 
+test('getOverview inclui kodiCache quando há cleaner, e tolera erro do cache', async () => {
+  const ok = createHandler({
+    allowedSenders: [APP_ID], deps: {},
+    storage: { getOverview: async () => ({ areas: [], apps: [] }) },
+    cleaner: {
+      getCleanables: async () => ({ targets: [{ key: 'thumbnails', label: 'x', exists: true, sizeK: 100 }], partial: false }),
+      clean: async () => ({}),
+    },
+  });
+  const m1 = message(APP_ID, {});
+  await ok('getOverview', m1);
+  assert.strictEqual(m1.responses[0].returnValue, true);
+  assert.strictEqual(m1.responses[0].kodiCache.targets[0].sizeK, 100);
+
+  const bad = createHandler({
+    allowedSenders: [APP_ID], deps: {},
+    storage: { getOverview: async () => ({ areas: [], apps: [] }) },
+    cleaner: { getCleanables: async () => { throw new Error('du falhou'); }, clean: async () => ({}) },
+  });
+  const m2 = message(APP_ID, {});
+  await bad('getOverview', m2);
+  assert.strictEqual(m2.responses[0].returnValue, true);
+  assert.strictEqual(m2.responses[0].kodiCache, undefined);
+});
+
 test('executa um pedido por vez e recusa fila longa', async () => {
   const order = [];
   const gates = [deferred(), deferred()];

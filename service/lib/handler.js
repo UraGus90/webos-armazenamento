@@ -14,7 +14,18 @@ function errorResponse(err) {
 
 function createHandler({ allowedSenders, deps, storage, cleaner, log = () => {}, maxPending = MAX_PENDING }) {
   const methods = {
-    getOverview: () => storage.getOverview(deps),
+    getOverview: async () => {
+      const overview = await storage.getOverview(deps);
+      // Inclui o tamanho do cache do Kodi já no overview, para aparecer na tela principal.
+      if (cleaner) {
+        try {
+          overview.kodiCache = await cleaner.getCleanables(deps);
+        } catch (err) {
+          // cache é informação opcional; não derruba o overview
+        }
+      }
+      return overview;
+    },
     getUsage: (payload) => storage.getUsage(deps, payload),
   };
   if (cleaner) {

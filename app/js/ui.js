@@ -100,15 +100,34 @@
     return card;
   }
 
-  function maintenance(handlers) {
+  function cacheBreakdown(cache) {
+    if (!cache) return 'Miniaturas, pacotes e temporários do Kodi';
+    var parts = cache.targets
+      .filter(function (t) { return t.exists && !t.unknown && t.sizeK > 0; })
+      .map(function (t) { return t.label.replace(/ do Kodi$| \(.*\)$/, '') + ' ' + M.formatSize(t.sizeK); });
+    return parts.length ? parts.join(' · ') : 'Nada em cache no momento';
+  }
+
+  function maintenance(cache, handlers) {
     var s = section('Manutenção');
-    var btn = el('button', 'row action', 'Limpar cache do Kodi');
+    var btn = el('button', 'row action', null);
     btn.type = 'button';
     btn.setAttribute('data-focus', '');
     btn.setAttribute('data-key', 'clean');
     btn.addEventListener('click', handlers.openClean);
+    var head = el('div', 'row-head');
+    var names = el('div', 'row-names');
+    names.appendChild(el('span', 'row-title', 'Limpar cache do Kodi'));
+    names.appendChild(el('span', 'row-sub', cacheBreakdown(cache)));
+    head.appendChild(names);
+    var size = el('div', 'row-size');
+    size.appendChild(el('span', 'size', cache ? M.formatSize(cache.totalK) : '—'));
+    size.appendChild(el('span', 'pct', cache ? 'em cache' : ''));
+    head.appendChild(size);
+    head.appendChild(el('span', 'chevron', '›'));
+    btn.appendChild(head);
     s.appendChild(btn);
-    s.appendChild(el('p', 'note', 'Apaga miniaturas, pacotes de add-ons e temporários do Kodi. Seguro: o Kodi recria o que precisar.'));
+    s.appendChild(el('p', 'note', 'Apaga miniaturas em cache, pacotes de add-ons e temporários do Kodi. Seguro: o Kodi recria o que precisar.'));
     return s;
   }
 
@@ -146,7 +165,7 @@
       });
       view.appendChild(othersSection);
     }
-    view.appendChild(maintenance(handlers));
+    view.appendChild(maintenance(model.kodiCache, handlers));
     if (model.partial) partialNotice(view);
   }
 
@@ -202,7 +221,7 @@
     var box = el('div', 'state');
     box.appendChild(el('p', 'result-big', M.formatSize(model.freedK) + ' liberados'));
     if (model.partial) {
-      box.appendChild(el('p', 'note', 'Alguns itens não puderam ser apagados (em uso ou sem permissão).'));
+      box.appendChild(el('p', 'note', 'Uns poucos arquivos em uso pelo Kodi ficaram e serão recriados/limpos pelo próprio Kodi.'));
     }
     box.appendChild(actionButton('Voltar', 'done', 'btn-plain', handlers.done));
     view.appendChild(box);

@@ -149,6 +149,7 @@
       apps: apps,
       others: others,
       memory: buildMemory(data),
+      kodiCache: data && data.kodiCache ? buildCleanables(data.kodiCache) : null,
       hasKodi: apps.some(function (a) { return a.id === 'org.xbmc.kodi'; }),
       partial: !!(data && data.partial),
       generatedAt: data && data.generatedAt

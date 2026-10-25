@@ -141,6 +141,18 @@ test('buildOverview expõe memory e hasKodi', () => {
   assert.strictEqual(M.buildOverview({ areas: [], apps: [] }).hasKodi, false);
 });
 
+test('buildOverview expõe kodiCache a partir de getCleanables', () => {
+  const model = M.buildOverview({
+    areas: [{ id: 'apps', totalK: 100, usedK: 40, availK: 60 }],
+    apps: [{ id: 'org.xbmc.kodi', kind: 'app', title: 'Kodi', sizeK: 20, path: '/k' }],
+    kodiCache: { targets: [{ key: 'thumbnails', label: 'Miniaturas do Kodi', exists: true, sizeK: 138352 }], partial: false },
+  });
+  assert.ok(model.kodiCache);
+  assert.strictEqual(model.kodiCache.totalK, 138352);
+  assert.strictEqual(model.kodiCache.any, true);
+  assert.strictEqual(M.buildOverview({ areas: [], apps: [] }).kodiCache, null);
+});
+
 test('buildCleanables filtra, soma o selecionável e lista as chaves', () => {
   const model = M.buildCleanables({
     targets: [
